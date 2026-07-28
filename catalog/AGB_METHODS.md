@@ -7,7 +7,7 @@ the code is in `derive_agb/`. Units are **AGB in Mg/ha** (dry biomass), not carb
 Allometry/coefficient sources are never fabricated — each is transcribed from or bundled with its
 citation (`derive_agb/allometry.py`, `chojnacky_taxonomy.py`, `wood_density.py`, PDFs in `derive_agb/refs/`).
 
-Legend: **route** = how structure→AGB; **coords** = tier for 10 m pixel use (A precise / B ≥~1 km).
+Legend: **route** = how structure→AGB; **coords** = tier for 10 m pixel use (A precise / B ≥≈1 km).
 
 ---
 
@@ -28,12 +28,12 @@ Legend: **route** = how structure→AGB; **coords** = tier for 10 m pixel use (A
 - **Expansion:** IFN variable-radius concentric-plot design — 5/10/15/25 m radii for dbh 7.5–12.5 /
   12.5–22.5 / 22.5–42.5 / ≥42.5 cm → 127.32/31.83/14.15/5.09 trees/ha; plot AGB = Σ(tree AGB × factor).
 - **Coords:** `PCDatosMap` CoorX/CoorY + Huso, with the **per-province datum** (ED50 / ETRS89 / WGS84 —
-  a ~200 m error if confused) → WGS84; missing Huso filled from province modal/default.
+  a ≈200 m error if confused) → WGS84; missing Huso filled from province modal/default.
 - **Two traps handled:** (1) `access-parser` drops the `PCMayores` Provincia column, shifting the *text*
   columns — so `Estadillo` (join) and `Especie` (species) are resolved by **content** (Especie by overlap
   with real IFN codes, since the `Subclase`/order columns are also 3-digit and would otherwise win).
-  (2) per-province datum. Result median **58 Mg/ha** (biome-correct: arid SE ~22–35, wet N ~110–167).
-- **Caveats:** IFN4 fieldwork ~2008–2019, province-dependent, and the field DB has **no per-tree date** —
+  (2) per-province datum. Result median **58 Mg/ha** (biome-correct: arid SE ≈22–35, wet N ≈110–167).
+- **Caveats:** IFN4 fieldwork ≈2008–2019, province-dependent, and the field DB has **no per-tree date** —
   much predates the 2014 window (use the province campaign year). Coords "approximate" per MITECO.
   Species without an INIA equation (P. radiata, Q. robur/petraea, …) dropped+reported.
 - **Reader trap:** `access-parser` throws (`KeyError` in column defs) on the **Extremadura** DB — so it
@@ -47,14 +47,14 @@ Legend: **route** = how structure→AGB; **coords** = tier for 10 m pixel use (A
 ### USA FIA — `fia_public_plot_agb.csv` (224,291 plot-visits, 51 states; 74,550 in-window) · **coords B**
 - **Route:** **no allometry run** — FIA ships a precomputed per-tree oven-dry above-ground biomass
   `DRYBIO_AG` [lb]. Plot AGB = `Σ(DRYBIO_AG · TPA_UNADJ)` [lb/acre] × 0.00112085 → Mg/ha, per plot-visit
-  (`PLT_CN`). Post-2023 DataMart `DRYBIO_AG` = **NSVB** (National Scale Volume & Biomass, ~15% higher than
+  (`PLT_CN`). Post-2023 DataMart `DRYBIO_AG` = **NSVB** (National Scale Volume & Biomass, ≈15% higher than
   the old CRM component estimates) — so these are NSVB tonnes, worth noting against older FIA comparisons.
 - **Public-land subset:** `COND.OWNGRPCD ∈ {10,20,30}` (federal/state/local) only. This deliberately
-  **avoids the ~20% private-plot coordinate swap** (FIA perturbs *and* swaps a fraction of private-plot
+  **avoids the ≈20% private-plot coordinate swap** (FIA perturbs *and* swaps a fraction of private-plot
   coordinates; public-land plots are only fuzzed, never swapped). Every forest condition on a kept plot
   is public.
-- **Coords:** **TIER B** — public coordinates are fuzzed up to ~0.8–1.6 km (never swapped for public land).
-  Good for aggregate / coarse (county / ecoregion / ~1 km) validation, **not 10 m pixels**. True plot
+- **Coords:** **TIER B** — public coordinates are fuzzed up to ≈0.8–1.6 km (never swapped for public land).
+  Good for aggregate / coarse (county / ecoregion / ≈1 km) validation, **not 10 m pixels**. True plot
   centres only via **FIA Spatial Data Services** (collaborator-gated, months-long — route PAUSED).
 - **Result:** national median **85.3 Mg/ha** (mean 110.9, p95 303.7); regional medians sane (UT 29, WV 186,
   OR 123, PR 43). Per-plot `MEASYEAR` retained → in-window (2014–2025) subset = 74,550.
@@ -84,18 +84,18 @@ Legend: **route** = how structure→AGB; **coords** = tier for 10 m pixel use (A
 - **Coords:** WGS84 lat/lon, `in_gps` flag. **Result:** median 78 Mg/ha (boreal/mixedwood).
 
 ### BCI ForestGEO 50-ha — `bci_forestgeo_quadrat_agb.csv` (1,250 quadrats) · coords A (axis-aligned)
-- **Route:** latest census (8, ~2013–2016, in-window), live stems ≥1 cm; per-stem **Chave 2005 moist**
+- **Route:** latest census (8, ≈2013–2016, in-window), live stems ≥1 cm; per-stem **Chave 2005 moist**
   (diameter-only) with wood density from GWDD (Central-America-tropical); aggregated to the plot's
   **20×20 m quadrats** (400 m² → Mg/ha) and whole-50-ha.
-- **Result:** whole-plot **302.5 Mg/ha** (matches published BCI ~280–320 → validates the chain); quadrat
+- **Result:** whole-plot **302.5 Mg/ha** (matches published BCI ≈280–320 → validates the chain); quadrat
   median 240 Mg/ha.
 - **Coords: absolute georef NOW APPLIED.** Community-standard **axis-aligned** affine: plot-local PX/PY →
   UTM 17N/WGS84 (EPSG:32617), SW corner **(625754, 1011569)**, plot-x→+E, plot-y→+N → lon/lat. Same
   convention as the plot's own georeferenced products (Kupers 2019 soil rasters, ForestGEO photogrammetry),
   so comparisons against them are consistent. **Centre verified at 9.1516 °N, 79.8509 °W** (documented
-  ~9.15 N/79.85 W — asserted in code). CSV keeps both `px_center/py_center` (exact plot-local) and
+  ≈9.15 N/79.85 W — asserted in code). CSV keeps both `px_center/py_center` (exact plot-local) and
   `utm_e/utm_n/lon/lat` (absolute). The plot's **sub-degree physical rotation vs UTM north is neglected**
-  (as in those standard products) → residual edge error ≤~9 m (~1 px) at the far x=1000 edge; fine for
+  (as in those standard products) → residual edge error ≤≈9 m (≈1 px) at the far x=1000 edge; fine for
   coarse/aggregate placement, treat 10 m pixel matching as approximate.
 - **Access:** Dryad gates downloads (API bearer token + Cloudflare); fetched with a user-supplied token.
 - **CIRCULARITY:** BCI may be in the training set of CCI/GEDI/JAXA (and possibly AEF) — confirm independence.
@@ -115,7 +115,7 @@ Legend: **route** = how structure→AGB; **coords** = tier for 10 m pixel use (A
   the Global Wood Density DB (Zanne 2009, South-America-tropical, species→genus→family→region fallback,
   `wood_density.py`); **Chave et al. 2005 moist-forest, diameter-only** (no height/E in-file); per
   conglomerado area-weighted (nested F=154 m² / FG=707 m² subplot areas from `sampleSizeValue`).
-- **Coords:** **TIER B** — generalized to ~10.6 km grid (`coordinateUncertaintyInMeters`=10606; exact only
+- **Coords:** **TIER B** — generalized to ≈10.6 km grid (`coordinateUncertaintyInMeters`=10606; exact only
   on request to IDEAM). Distributional reference, not pixel validation. "datos sin validar."
 - **Result:** median 58 Mg/ha.
 
@@ -123,19 +123,19 @@ Legend: **route** = how structure→AGB; **coords** = tier for 10 m pixel use (A
 - **Route:** Chave 2014 Eq.4 (height); WD = in-file `WSD` where it varies by species else GWDD
   (South-America tropical); height = in-file `Htot` else per-site/pooled log-log H-D model. Live trees;
   lianas/palms excluded; DBH ≥ 5 cm.
-- **Area (the crux — now correct):** the `*_plots` shapefiles carry, per plot, a **`plot` (~0.25 ha main)
-  + `subplot` (~0.05 ha nested)** polygon pair. We match each CSV plot to the **LARGEST polygon for that
+- **Area (the crux — now correct):** the `*_plots` shapefiles carry, per plot, a **`plot` (≈0.25 ha main)
+  + `subplot` (≈0.05 ha nested)** polygon pair. We match each CSV plot to the **LARGEST polygon for that
   plot number** (so the nested subplot never shadows its main plot), falling back to the site's median
   main-plot area for undigitized plots (`design_site`), and to the documented **20×500 m = 1 ha** for
   transect-keyed sites. `area_src` column records which was used (shp 154 / design_1ha 119 / design_site 36).
 - **AREA FIX (this pass) — caught six silently-wrong sites:** the earlier granularity-guarded matcher fell
   back to 1 ha for plot-keyed sites whose real plots are 0.25 ha, giving medians that *looked* plausible
   but were **4× too low** and so were never flagged: **BON 31→128, HUM 34→138, TAL 27→104, SAN 5→23,
-  FN 18→71** (0.25 ha), **TAC 38→111** (~0.09 ha). Verified against the shapefiles' explicit `plot`/`subplot`
-  labels (~2500 vs ~490 m²). **13 of 14 sites now plausible** (medians 23–273 Mg/ha).
+  FN 18→71** (0.25 ha), **TAC 38→111** (≈0.09 ha). Verified against the shapefiles' explicit `plot`/`subplot`
+  labels (≈2500 vs ≈490 m²). **13 of 14 sites now plausible** (medians 23–273 Mg/ha).
 - **FNA is the one remaining flag — and it's genuine, not a bug:** its area *is* correct (500 m transects =
   the 1 ha design, confirmed from per-tree UTM extents), but only **49 of 283 trees are live** → a real
-  **degraded/heavily-logged** site at ~4 Mg/ha live biomass. Keep it, but treat as a low-biomass outlier,
+  **degraded/heavily-logged** site at ≈4 Mg/ha live biomass. Keep it, but treat as a low-biomass outlier,
   not a normal-forest point. **Filter `site_plausible=True` for the clean set.** SLB is mostly 2009–2013,
   so its in-window Tier-A subset is small regardless (32 records).
 

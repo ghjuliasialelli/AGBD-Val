@@ -20,7 +20,7 @@
 > | `colombia_ifn_conglomerado_agb.csv` | 283 | Chave 2005 moist + GWDD; DBH from basal area | **B (10.6 km coords)** |
 > | `mondah_plot1ha_agb_derived.csv` | 15 | Chave 2014 Eq4 — VALIDATED to 1e-4 | A |
 > | `tern_biomass_plot_library_agb.csv` | 612 | provider agb re-aggregated | B (pre-window) |
-> | `fia_public_plot_agb.csv` | **IN PROGRESS** | FIA precomputed DRYBIO_AG×TPA; PUBLIC-LAND subset (no swap) | **B (fuzzed ~0.8km)** |
+> | `fia_public_plot_agb.csv` | **IN PROGRESS** | FIA precomputed DRYBIO_AG×TPA; PUBLIC-LAND subset (no swap) | **B (fuzzed ≈0.8km)** |
 > | rasters: `GAO_Sabah_AGB_30m.tif`, `GAO_Peru_AGB_100m.tif`, `SLB_Paragominas_AGB_50m.tif` | — | ACD÷0.48 (carbon→AGB), nodata masked on raw | A |
 >
 > ### FIA — running DETACHED (survives session exit)
@@ -43,7 +43,7 @@
 >   user-supplied token in `.dryad_credentials` (600). **SECURITY: that token was pasted in chat → tell
 >   user to ROTATE it.** NEON token in `.neon_token` (600). Never write `/home`.
 > - **FIA DataMart**: `https://apps.fs.usda.gov/fia/datamart/CSV/<ST>_<PLOT|COND|TREE>.zip`. Biomass
->   precomputed (post-2023 = NSVB, ~15% > old CRM). OWNGRPCD/COND_STATUS_CD in COND; LAT/LON/MEASYEAR in PLOT.
+>   precomputed (post-2023 = NSVB, ≈15% > old CRM). OWNGRPCD/COND_STATUS_CD in COND; LAT/LON/MEASYEAR in PLOT.
 > - **Spain IFN4** (MITECO): per-province `.accdb` under `.../dam/miteco/.../inventarios-nacionales/`
 >   (no clean naming — list in `data/spain_ifn4_files.txt`). Read with `access-parser` (pip) NOT ogr
 >   (no MDB driver). **TRAP: access-parser drops PCMayores.Provincia → text cols shift** → resolve
@@ -56,7 +56,7 @@
 > 2. BCI absolute georef: apply verified UTM17N SW-corner + plot bearing to PX/PY (currently plot-local).
 > 3. SLB: 3 flagged sites (FNA/SAN/FN) need per-file plot areas (provider shapefiles can't give them).
 > 4. Spain: Extremadura (combined 2-prov DB) skipped; 4 Andalucía provinces still IFN3; coords "approx"
->    + IFN4 fieldwork ~2008–2019 (no per-tree date) so mostly pre-window — it's biome-fill, not in-window A.
+>    + IFN4 fieldwork ≈2008–2019 (no per-tree date) so mostly pre-window — it's biome-fill, not in-window A.
 > 5. Gated true-coord sources (USER ACTION): send `data/ACCESS_REQUESTS.md` letters — Estonia & Sweden
 >    (documented YES on exact coords), Canada NFI DUA, Argentina INBN2, Mexico INFyS. FIA SDS is PAUSED.
 > 6. Next phase (not started): sample AEF embeddings at plot coords per year → validation X/Y pairs
@@ -97,7 +97,7 @@ regenerate the CSV from JSON. Optionally `--check-urls`.
 terminal: `mv ~/.claude /scratch3/gsialelli/dotclaude && ln -s /scratch3/gsialelli/dotclaude ~/.claude`
 (or set `CLAUDE_CONFIG_DIR` for zero /home footprint), then relaunch — unblocks shell + memory.
 
-**~40 datasets, all web-verified 2026-07-23** via 3 research agents. Full verified per-dataset metadata
+**≈40 datasets, all web-verified 2026-07-23** via 3 research agents. Full verified per-dataset metadata
 (provider, coverage, units, temporal, coord availability, access, portal URL, DOI, caveats) is in the
 three agent results in the originating conversation. Datasets:
 - In-situ plot networks: GEO-TREES, ForestPlots.net (+RAINFOR/AfriTRON/T-FORCES/PPBio), Smithsonian
@@ -112,7 +112,7 @@ three agent results in the originating conversation. Datasets:
   (CEDA/zenodo), TERN AusCover SuperSites, DRC + Central-Africa reference AGB.
 
 **Headline design decision — `coord_usability_tier` column** (pixel | aggregate | restricted):
-- Pixel-usable open: France (±700m node), Spain (plot UTM; ED50→ETRS89 ~200m shift), TERN, GEO-TREES
+- Pixel-usable open: France (±700m node), Spain (plot UTM; ED50→ETRS89 ≈200m shift), TERN, GEO-TREES
   (≥0.25ha aggregated), NEON (m-level uncertainty), SWAMP, all open airborne-lidar rasters. Canada
   partial (exact coords on request).
 - Public but coarsened (aggregate only): US FIA (fuzzed ±0.5–1mi + private-plot swap; publishes tree
@@ -123,7 +123,7 @@ three agent results in the originating conversation. Datasets:
 
 **Data-accuracy flags to encode as caveats:**
 - carbon-not-biomass: GAO Peru/Sabah + most DRC = Mg C/ha → `variable=AGC`, convert ÷≈0.47 (silent
-  factor-~2 halving trap).
+  factor-≈2 halving trap).
 - not-wall-to-wall: Sustainable Landscapes Brazil, G-LiHT, NEON AOP, DRC national map = transects/
   swaths/structure-only — a site name is not a geometry; assert per-axis overlap + n>0.
 - volume-not-biomass: most EU NFIs publish m³/ha growing stock (needs allometric/BEF conversion);

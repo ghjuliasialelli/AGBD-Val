@@ -63,7 +63,7 @@ Encoded from hard-won lessons (see `~/.claude/CLAUDE.md`). Every one of these pr
 *plausible-looking wrong numbers*, not a crash:
 
 1. **Units are not interchangeable.** `variable` + `units` are separate columns because half the
-   pain is silent AGB (Mg/ha) vs carbon (MgC/ha, ~0.47×) vs growing-stock-volume (m³/ha, needs a
+   pain is silent AGB (Mg/ha) vs carbon (MgC/ha, ≈0.47×) vs growing-stock-volume (m³/ha, needs a
    wood-density × BEF conversion) confusion. Never compare a map to a reference without matching both.
 2. **Spatial support must match.** `support_size` is explicit because a 0.04 ha FIA subplot, a 1 ha
    ForestGEO plot, and a 100 m airborne-lidar pixel are *different quantities* than a 10–100 m map

@@ -66,8 +66,8 @@ exact method behind each, and `catalog/COORD_TIER_PARTITION.md` for the usabilit
 | `GAO_Peru_AGB_100m.tif` | Asner Peru ACD | raster | — |
 | `SLB_Paragominas_AGB_50m.tif` | ORNL 1648 lidar+radar | raster | — |
 
-**Tier A** = precise (~10 m) coordinates, usable for per-pixel validation.
-**Tier B** = coordinates fuzzed/aggregated (≥~1 km) — aggregate/distributional cross-checks only.
+- **Tier A** = precise coordinates (about 10 m), usable for per-pixel validation.
+- **Tier B** = coordinates fuzzed/aggregated (≥1 km) — aggregate/distributional cross-checks only.
 
 ## Running
 
