@@ -1,0 +1,14 @@
+{
+  "output": "data/derived/SLB_Paragominas_AGB_50m.tif",
+  "source": "data/sustainable-landscapes-brazil/1648_paragominas_lidar_agb/paragominas_predicted_agb.tif",
+  "source_sha256": "51ad0bc6fd0368c174c0a9a944629c5d3928121cf35785323385bb4eefd3dbbe",
+  "source_mtime": 1785144088.8503456,
+  "transform": "AGB = ACD / carbon_fraction (carbon->biomass)",
+  "carbon_fraction": 0.48,
+  "carbon_fraction_ref": "Asner & Mascaro 2014 (tropical 0.48)",
+  "n_valid_px": 1931909,
+  "agb_min": 0.0,
+  "agb_max": 602.11376953125,
+  "agb_mean_mg_ha": 197.91933651993298,
+  "nodata": -99999.0
+}

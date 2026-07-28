@@ -1,0 +1,26 @@
+# Secrets — never commit
+.neon_token
+.dryad_credentials
+*.token
+*_credentials
+
+# Environment / caches
+.venv/
+__pycache__/
+*.pyc
+.uv_cache/
+
+# Bulky data — raw downloads and derived rasters are reproducible from the fetch/derive scripts.
+# Track the code, catalog, and provenance; not the gigabytes of source rasters.
+data/*/
+!data/derived/
+data/derived/*.tif
+data/logs/
+
+# Keep: derived CSVs + provenance JSON (small, the actual deliverable)
+!data/derived/*.csv
+!data/derived/*.provenance.json
+!data/derived/*.tif.provenance.json
+
+# loose download logs (chatter; manifests .tsv are kept)
+data/*.log

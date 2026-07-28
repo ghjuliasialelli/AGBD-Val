@@ -1,0 +1,18 @@
+{
+  "output": "/scratch3/gsialelli/AGBD-Val/data/derived/slb_brazil_transect_agb.csv",
+  "origin": "Sustainable Landscapes Brazil forest inventory (ORNL 2007)",
+  "allometry": "Chave et al. 2014 Eq.4 (with height); WD from in-file WSD (where it varies) else Global Wood Density DB (Zanne 2009, South-America tropical)",
+  "height": "in-file Htot where >0, else per-site then pooled log-log H-D model",
+  "area": "per plot: LARGEST digitized *_plots polygon for that plot number (the shapefiles carry a 'plot' 0.25 ha main + 'subplot' ~0.05 ha nested pair -> the main is taken, never the subplot); plots with no digitized polygon use the site's median main-plot area (design_site); transect-keyed sites use the documented 20x500 m = 1 ha design.",
+  "area_src_counts": {
+    "shp": 154,
+    "design_1ha": 119,
+    "design_site": 36
+  },
+  "filters": "live only (dead flag), lianas/palms excluded, DBH>=5 cm",
+  "n_records": 309,
+  "n_sites": 14,
+  "n_in_window_coord": 0,
+  "files_skipped": [],
+  "CAVEAT": "Heterogeneous provider CSVs normalised; skipped files listed. AREA FIX (this pass): matching the CSV plot id to the LARGEST polygon per plot number corrected six sites that were silently divided by 1 ha when their real plots are 0.25 ha (BON 31->128, HUM 34->138, TAL 27->104, SAN 5->23, FN 18->71) or ~0.09 ha (TAC 38->111) -- all had a plausible-looking-but-4x-low median before, none flagged. 13/14 sites now plausible. ONLY FNA remains flagged (median ~4 Mg/ha): its area IS correct (500 m transects = the 1 ha design, confirmed from per-tree UTM extents) -- the low value is GENUINE heavy mortality (only 49 of 283 trees live), a real degraded-forest datapoint, not an area artifact. Multi-year files give one record per plot per year. Coords Tier-A."
+}

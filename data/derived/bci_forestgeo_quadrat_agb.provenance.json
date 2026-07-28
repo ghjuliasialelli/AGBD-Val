@@ -1,0 +1,15 @@
+{
+  "output": "/scratch3/gsialelli/AGBD-Val/data/derived/bci_forestgeo_quadrat_agb.csv",
+  "origin": "BCI ForestGEO 50-ha plot, Dryad 10.15146/5xcp-0d46 (CC0), FullMeasurementBCI.tsv",
+  "source_sha256": "647c3115f8f14411c534fda4929c881f0bc4e9ec976625ffdc11c9b5da87e4e3",
+  "census": 8,
+  "n_quadrats": 1250,
+  "quadrat_m": 20.0,
+  "allometry": "Chave et al. 2005 moist-forest, diameter-only",
+  "wood_density": "Global Wood Density DB (Zanne 2009), CentralAmericaTrop, taxonomic fallback",
+  "whole_plot_agb_mg_ha": 302.4602081565834,
+  "quadrat_median_mg_ha": 239.70977624918962,
+  "coords": "px_center/py_center = plot-local metres (exact). utm_e/utm_n/lon/lat = ABSOLUTE, axis-aligned affine: UTM17N/WGS84 (EPSG:32617), SW corner (625754, 1011569), plot-x->+E plot-y->+N. Centre verified at 9.1516N -79.8509 (~9.15N/-79.85).",
+  "georef_method": "community-standard axis-aligned placement (Kupers 2019 soil rasters / ForestGEO photogrammetry use EPSG:32617). Plot sub-degree physical rotation vs UTM north is NEGLECTED (as in those products); residual edge error <=~9 m (~1 px) at x=1000. Good for coarse/aggregate placement; treat 10 m pixel matching as approximate.",
+  "CAVEAT": "One 50-ha plot. Live stems DBH>=1 cm; per-stem (multi-stem trees summed). Census ~2015 in-window. CIRCULARITY: BCI may be in the training set of CCI/GEDI/JAXA and possibly AEF -- confirm independence before using as a validation target."
+}

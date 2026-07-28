@@ -1,0 +1,29 @@
+{
+  "output": "/scratch3/gsialelli/AGBD-Val/data/derived/neon_plot_agb.csv",
+  "origin": "NEON DP1.10098.001 Woody Plant Vegetation Structure (basic package)",
+  "n_source_files": {
+    "apparentindividual": 898,
+    "mappingandtagging": 1036,
+    "perplotperyear": 864
+  },
+  "allometry": "Chojnacky, Heath & Jenkins 2014 Forestry 87:129, Table 5 (forest dbh groups)",
+  "allometry_ref": "derive_agb/refs/Chojnacky2014_Forestry.pdf",
+  "n_chojnacky_groups_used": 30,
+  "filters": {
+    "growthForm": [
+      "multi-bole tree",
+      "single bole tree",
+      "small tree"
+    ],
+    "plantStatus": "Live*",
+    "measurementHeight_cm": "110-140 or NaN",
+    "dbh_min_cm": 1.0
+  },
+  "area_denominator": "perplotperyear.totalSampledAreaTrees (NEON nested-subplot design)",
+  "min_tree_coverage": 0.9,
+  "n_plot_years": 4150,
+  "n_coverage_ok": 3635,
+  "n_sites": 35,
+  "agb_median_mg_ha_coverage_ok": 144.62226283948496,
+  "CAVEAT": "Chojnacky is a TEMPERATE North-American generalized allometry; NEON tropical sites (Puerto Rico: GUAN/LAJA, and palms) are largely unmapped and excluded, not defaulted. Woodland juniper/pinyon/mesquite (drc species) are dropped. Filter on coverage_ok before use."
+}

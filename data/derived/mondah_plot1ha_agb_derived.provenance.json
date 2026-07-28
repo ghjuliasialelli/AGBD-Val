@@ -1,0 +1,21 @@
+{
+  "output": "/scratch3/gsialelli/AGBD-Val/data/derived/mondah_plot1ha_agb_derived.csv",
+  "origin": "AfriSAR Mondah field inventory (ORNL DAAC 1580), Mondah_Field_Data_Trees.csv aggregated to 1 ha plots; VALIDATION anchor for allometry.py",
+  "sources_sha256": {
+    "Mondah_Field_Data_Trees.csv": "b6f47cb1ff101bb6463e61f50a7e4373c72b3c2cdf5a3a9f341e977d140cdd84",
+    "Mondah_Field_Data_Plot-1ha.csv": "25d83b0f6bd875b7d3ac5ef1ac5d21564387c28201d4d8ce30d34121b98dd087"
+  },
+  "allometry": "Chave et al. 2014 Eq.4 (with height): AGB = 0.0673*(rho*D^2*H)^0.976 [kg]",
+  "inputs": "d_stem [m]->cm, wsg [g/cm3]; height = measured h_t where >0 else modeled h_t_mod",
+  "filters": "d_stem>0 & wsg>0 & H>0 & m_agb>0 (47/6692 -9999-sentinel stems excluded)",
+  "aggregation": "sum per-tree AGB per plot -> Mg over 1 ha => Mg/ha",
+  "n_trees": 6645,
+  "n_plots": 15,
+  "validation": {
+    "per_tree_max_rel_err_vs_m_agb": 0.01904408560341098,
+    "per_tree_mass_weighted_rel_err": 0.00010849653879553507,
+    "plot_1ha_max_rel_err_vs_agbd_ha": 0.04674922546811731,
+    "passed": true
+  },
+  "CAVEAT": "This is the correctness TEST for Chave-2014 in allometry.py: it reproduces the provider per-tree m_agb to mass-weighted ~1e-4. Derived plot sums run 0.3-4.7% LOW vs published agbd_ha because 47 unmeasured (-9999) stems are excluded here but still counted (imputed) in agbd_ha -- a completeness gap, not an allometry error. Coords precise (Tier-A); 15 one-hectare plots, 2016, in the AEF window."
+}

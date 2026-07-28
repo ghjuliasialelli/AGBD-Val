@@ -1,0 +1,23 @@
+{
+  "output": "/scratch3/gsialelli/AGBD-Val/data/derived/quebec_pep_plot_agb.csv",
+  "origin": "Quebec MFFP PEP (placettes-echantillons permanentes), PEP.gpkg",
+  "source_sha256": "6d53e90a23799d681d050e13a433bc6e7ede6549b0733c8cc9c01fc8f94348c9",
+  "allometry": "Chojnacky, Heath & Jenkins 2014 (US generalized; NE-temperate flora covered)",
+  "expansion": "MFFP tige_ha (stems/ha per tree)",
+  "live_etat_codes": [
+    "10",
+    "12",
+    "30",
+    "32",
+    "40",
+    "42",
+    "50",
+    "52"
+  ],
+  "species_map": "derive_agb/quebec_species.py (tree essences only; rest dropped+reported)",
+  "n_plot_measurements": 50105,
+  "n_coverage_ok": 50076,
+  "n_in_window_coord": 11268,
+  "agb_median_mg_ha_coverage_ok": 78.38871998636867,
+  "CAVEAT": "Chojnacky (US) applied to Quebec; dhp in mm/10=cm; ETAT 14/44='mort' EXCLUDED. Coords WGS84 lat/lon with in_gps flag; filter coord_gps + in_window for 10 m use. Saplings (dendro_gaules) not included."
+}

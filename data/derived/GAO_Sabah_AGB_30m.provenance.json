@@ -1,0 +1,26 @@
+{
+  "output": "/scratch3/gsialelli/AGBD-Val/data/derived/GAO_Sabah_AGB_30m.tif",
+  "source": "/scratch3/gsialelli/AGBD-Val/data/gao-sabah-carbon/GAO_ACD_30m_unmasked.tif",
+  "source_mtime": 1784817995.4945283,
+  "source_sha256": "a44f234c795af2239243603293dbd810f698aeb82bcec98d9ea7657065a6e834",
+  "variable_in": "ACD (aboveground carbon density) [Mg C/ha]",
+  "variable_out": "AGB (aboveground biomass) [Mg/ha]",
+  "carbon_fraction": 0.48,
+  "equation": "AGB = ACD / carbon_fraction",
+  "citation": "Asner et al. 2018 Biol. Conserv. 217:289 (GAO Sabah ACD)",
+  "nodata": -9999.0,
+  "nodata_conventions_masked": [
+    "-9999 sentinel",
+    "NaN",
+    "finite negatives"
+  ],
+  "n_masked_px": 131253967,
+  "n_sentinel_px": 131202321,
+  "n_nan_px": 51646,
+  "n_other_negative_px": 0,
+  "n_valid_px": 77596753,
+  "agb_min": 0.0,
+  "agb_max": 3849.341064453125,
+  "agb_mean": 149.3675537109375,
+  "agb_median": 97.96876525878906
+}

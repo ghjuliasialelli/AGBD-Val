@@ -1,0 +1,12 @@
+{
+  "output": "/scratch3/gsialelli/AGBD-Val/data/derived/fia_public_plot_agb.csv",
+  "origin": "USDA FIA DataMart per-state CSV (PLOT/COND/TREE)",
+  "subset": "PUBLIC-LAND plots only (OWNGRPCD 10/20/30; every forest condition public) -- avoids the ~20% private-plot coordinate swap",
+  "biomass": "FIA precomputed DRYBIO_AG (post-2023 DataMart = NSVB, ~15% > old CRM); no allometry run",
+  "agb": "\u03a3(DRYBIO_AG lb \u00b7 TPA_UNADJ /acre) = lb/acre \u00d7 0.00112085 -> Mg/ha, per plot-visit (PLT_CN)",
+  "n_plot_visits": 224291,
+  "n_in_window": 74550,
+  "n_states": 51,
+  "agb_median_mg_ha": 85.30176068986725,
+  "coord_tier": "B -- public coords fuzzed up to ~0.8-1.6 km (not swapped for public land). Usable for aggregate/coarse (county/ecoregion/~1 km) validation, NOT 10 m pixels. True coords only via FIA Spatial Data Services (paused)."
+}

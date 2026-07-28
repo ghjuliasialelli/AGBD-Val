@@ -1,0 +1,13 @@
+{
+  "output": "/scratch3/gsialelli/AGBD-Val/data/derived/spain_ifn4_plot_agb.csv",
+  "origin": "Spain IFN4 (MITECO) per-province Access DBs",
+  "allometry": "Ruiz-Peinado 2011 (softwoods) + 2012 (hardwoods), above-ground total, by IFN code",
+  "expansion": "IFN variable-radius concentric plots (5/10/15/25 m by dbh class)",
+  "coords": "PCDatosMap CoorX/CoorY + Huso, per-province datum (ED50/ETRS89/WGS84) -> WGS84",
+  "n_plots": 52552,
+  "n_coverage_ok": 43858,
+  "n_provinces": 45,
+  "agb_median_mg_ha": 56.88294319149585,
+  "provinces_skipped": [],
+  "CAVEAT": "access-parser shifts PCMayores text columns -> Estadillo/Especie resolved by content. IFN4 fieldwork ~2008-2019 (province-dependent), so much predates the 2014-2025 window (no per-tree date in the field DB; use the province campaign year). Coords 'approximate' per MITECO -- verify before 10 m use. Species without an INIA equation dropped+reported."
+}

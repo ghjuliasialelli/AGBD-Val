@@ -1,0 +1,14 @@
+{
+  "output": "/scratch3/gsialelli/AGBD-Val/data/derived/colombia_ifn_conglomerado_agb.csv",
+  "origin": "Colombia IFN / IDEAM (SiB Colombia DwC-A ideam_ifn v2.1)",
+  "source_sha256": "692b38263f9aeb2a69c7b30b3273b2d8a67f6e118f250d3563ce83bf17f82376",
+  "allometry": "Chave et al. 2005 moist-forest, diameter-only (no height/E available)",
+  "wood_density": "Global Wood Density DB (Zanne 2009) via BIOMASS; SouthAmericaTrop; species->genus->family->region fallback",
+  "dbh_source": "back-calculated from per-stem basal area = sqrt(4*(BA/count)/pi)",
+  "aggregation": "per-conglomerado area-weighted density = sum(AGB)/sum(subplot area)",
+  "n_conglomerados": 283,
+  "n_in_window": 283,
+  "agb_median_mg_ha": 57.563078852990884,
+  "coord_tier": "B (generalized to ~10.6 km grid; exact coords only on request to IDEAM)",
+  "CAVEAT": "TIER-B coordinates (~10.6 km) -> distributional reference only, NOT 10 m pixel validation. 'datos sin validar'. DBH back-calculated from basal area; multi-stem records use mean DBH. Nested F(154 m2)/FG(707 m2) strata area-weighted."
+}

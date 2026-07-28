@@ -1,0 +1,31 @@
+{
+  "output": "/scratch3/gsialelli/AGBD-Val/data/derived/france_ifn_plot_agb.csv",
+  "sources": [
+    {
+      "path": "/scratch3/gsialelli/AGBD-Val/data/france-ifn/bulk/PLACETTE.csv",
+      "mtime": 1763713984.0,
+      "sha256": "cf0bc989994000d73c6025e7a62fa36e20237f98b335e0e9df0502c941180576"
+    },
+    {
+      "path": "/scratch3/gsialelli/AGBD-Val/data/france-ifn/bulk/ARBRE.csv",
+      "mtime": 1763713982.0,
+      "sha256": "d92af695c86909e52d42a583642542e5e22113acf63d55fb35f012e2f25a2958"
+    }
+  ],
+  "origin": "IGN Inventaire Forestier National, export_dataifn_2005_2024.zip",
+  "licence": "Licence Ouverte / Open Licence Etalab v2.0",
+  "coordinates": "Lambert-93 (EPSG:2154), full precision (1 m spacing) -- NOT degraded",
+  "equation": "AGB[Mg/ha] = sum_i V_i * rho(species) * BCEF * W_i",
+  "bcef_conifer": 1.3,
+  "bcef_broadleaf": 1.4,
+  "rho_source": "Zanne et al. 2009 Global Wood Density DB / IPCC 2006 GL Vol.4 Tab.4.14",
+  "n_species_with_rho": 25,
+  "window": [
+    2014,
+    2024
+  ],
+  "n_plots": 61472,
+  "n_plots_rho_coverage_ok": 49160,
+  "agb_median_mg_ha": 115.63999758233572,
+  "CAVEAT": "First-order IPCC volume-to-biomass route, NOT a fitted allometry. BCEF is a stand-level default with ~20-30% spread; rho is a species mean ignoring within-species and site variation. Use with a stated uncertainty. Filter on rho_coverage_ok before treating a plot as reference data."
+}

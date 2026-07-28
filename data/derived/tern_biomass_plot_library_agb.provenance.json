@@ -1,0 +1,42 @@
+{
+  "output": "/scratch3/gsialelli/AGBD-Val/data/derived/tern_biomass_plot_library_agb.csv",
+  "sources": [
+    {
+      "path": "/scratch3/gsialelli/AGBD-Val/data/tern-biomass-plot-library/biolib_sitelist.csv",
+      "mtime": 1784841715.520998,
+      "sha256": "e1986584f2f8cfcf97b2d2f28dc5a61643066992b4f5f10d306d55a2883bac3b"
+    },
+    {
+      "path": "/scratch3/gsialelli/AGBD-Val/data/tern-biomass-plot-library/biolib_treelist.csv",
+      "mtime": 1784841793.3673081,
+      "sha256": "fdf59812a3a7bbdf752922f75f65732b54fd2b396396161db6cefa2abd5e29d2"
+    }
+  ],
+  "origin": "TERN Biomass Plot Library via JRSRP GeoServer WFS (aus:biolib_sitelist / aus:biolib_treelist)",
+  "licence": "CC-BY-4.0",
+  "agb_units": "Mg/ha dry mass, aboveground; provider allometry (per-stem agb_allometric_model)",
+  "filters": {
+    "year_min": 2014,
+    "year_max": 2025,
+    "min_area_ha": 0.1
+  },
+  "counts": {
+    "sites_total": 15904,
+    "in_window": 1265,
+    "with_agb": 701,
+    "kept": 612
+  },
+  "verification": {
+    "method": "re-aggregated live (condition==0) per-stem agb_drymass over sampledarea_ha and compared to the provider's site-level agb_drymass_ha",
+    "status_counts": {
+      "no_stem_data": 573,
+      "provider_disagrees": 19,
+      "verified_exact": 19,
+      "provider_suspect": 1
+    },
+    "n_checkable": 39,
+    "median_ratio_checkable": 1.0001918714270632,
+    "note": "The stem table covers only 2,449 of 15,904 sites and NONE of the NSW-Forestry or WA plots, so most kept rows are 'no_stem_data' = provider value taken on faith. Filter on verify_status before using these as reference truth."
+  },
+  "caveat": "Library ends Oct 2015, so no overlap with AEF 2017-2025; usable only under the user's 2014+ relaxation, and only for slow-change sites. Australian woodland/savanna is fire-prone, so a 2014 plot is NOT safely comparable to a 2017 map."
+}

@@ -1,0 +1,757 @@
+Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria (INIA)                    Forest Systems 2011 20(1), 176-188
+Available online at www.inia.es/forestsystems                                                                      ISSN: 1131-7965
+                                                                                                                  eISSN: 2171-9845
+
+
+
+
+      New models for estimating the carbon sink capacity of Spanish
+                            softwood species
+                                  R. Ruiz-Peinado1,2*, M. del Rio1,2 and G. Montero1,2
+                         1
+                      Departamento de Selvicultura y Gestión de Sistemas Forestales. CIFOR-INIA.
+                                      Ctra. A Coruña, km 7,5. 28040 Madrid. Spain
+       2
+         Instituto Universitario de Investigación en Gestión Forestal Sostenible. Universidad de Valladolid-INIA
+
+
+Abstract
+   Quantifying the carbon balance in forests is one of the main challenges in forest management. Forest carbon stocks
+are usually estimated indirectly through biomass equations applied to forest inventories, frequently considering different
+tree biomass components. The aim of this study is to develop systems of equations for predicting tree biomass
+components for the main forest softwood species in Spain: Abies alba Mill., A. pinsapo Boiss., Juniperus thurifera
+L., Pinus canariensis Sweet ex Spreng., P. halepensis Mill., P. nigra Arn., P. pinaster Ait., P. pinea L., P. sylvestris L.,
+P. uncinata Mill. For each species, a system of additive biomass models was fitted using seemingly unrelated regression.
+Diameter at the breast height and total height were used as independent variables. Diameter appears in all component
+models, while tree height was included in the stem component model of all species and in some branch component
+equations. Total height was included in order to improve biomass estimations at different sites. These biomass models
+were compared to previously available equations in order to test their accuracy and it was found that they yielded better
+fitting statistics in all cases. Moreover, the models fulfil the additivity property.
+   We also developed root:shoot ratios in order to determine the partitioning into aboveground and belowground
+biomass. A number of differences were found between species, with a minimum of 0.183 for A. alba and a maximum
+of 0.385 for P. uncinata. The mean value for the softwood species studied was 0.265.
+   Since the Spanish National Forest Inventory (NFI) records species, tree diameter and height of sample trees, these
+biomass models and ratios can be used to accurately estimate carbon stocks from NFI data.
+   Key words: aboveground biomass; belowground biomass; carbon sequestration; root:shoot ratio; softwood species.
+
+Resumen
+Nuevos modelos para estimar la capacidad de fijación de carbono de las coníferas españolas
+   Conocer el balance de carbono en los bosques es uno de los principales retos dentro de la gestión forestal. Habi-
+tualmente, la estimación de carbono en los bosques se realiza de manera indirecta, mediante la aplicación de mode-
+los de diferentes fracciones de biomasa a los datos de inventario forestal. Para ello, en este estudio se han desarrolla-
+do sistemas de ecuaciones para estimar la biomasa forestal de las principales coníferas de los bosques de España:
+Abies alba Mill., A. pinsapo Boiss., Juniperus thurifera L., Pinus canariensis Sweet ex Spreng., P. halepensis Mill.,
+P. nigra Arn., P. pinaster Ait., P. pinea L., P. sylvestris L., P. uncinata Mill. Se ha usado la metodología de mínimos
+cuadrados generalizados conjuntos, para el cumplimiento de la aditividad entre componentes. Como variables inde-
+pendientes se utilizaron el diámetro normal y la altura total del árbol. El diámetro aparece en todas las ecuaciones co-
+mo variable significativa, mientras que la altura aparece también en todos los modelos para la biomasa de fuste y en
+algunos modelos para las ramas. Con la inclusión de la altura total se mejoran las estimaciones de los modelos en di-
+ferentes sitios. Los modelos ajustados fueron comparados con otras ecuaciones publicadas para comprobar la preci-
+sión, presentando mejores estadísticos en todos los casos. Mediante el uso de esta metodología, las ecuaciones cum-
+plen la propiedad aditiva.
+   Además, se han desarrollado relaciones específicas entre la parte radical y parte aérea, para conocer como se
+realiza el reparto de biomasa. Se han encontrado diferencias entre especies, alcanzándose un mínimo de 0,183 pa-
+ra A. alba y un máximo de 0,385 para P. uncinata, siendo el valor medio para estas especies de coníferas estudia-
+das de 0,265.
+
+* Corresponding author: ruizpein@inia.es
+Received: 09-11-10; Accepted: 14-02-11.
+                               Biomass models for the main softwood species in Spain                                 177
+
+
+   Como el Inventario Forestal Nacional (IFN) identifica para todas las especies medidas el diámetro normal y la al-
+tura total de todos los árboles inventariados, estos modelos y relaciones ajustadas pueden ser aplicados con precisión
+en la estimación de cantidades de carbono a partir de aquellos datos.
+   Palabras clave: biomasa aérea; biomasa radical; fijación de carbono; relación parte aérea y parte radical; coníferas.
+
+
+
+Introduction                                                  although they vary depending on growth conditions and
+                                                              stand development, particularly on stand age (Lehtonen
+   Southern European forests are characterised by a           et al., 2004, 2007), stand timber volume (Fang et al.,
+distinctive set of features. They support high levels of      2001) or tree height (Levy et al., 2004). Therefore,
+biological diversity (both plant and animal) as a result      more complex biomass models can provide more accu-
+of the survival of many species in southern European          rate estimations than BEF’s, hence, are more commonly
+refuges during the glacial periods. Furthermore, they         used to obtain forest biomass estimations (IPCC, 2003).
+have a harsh, unpredictable climate, difficult socio-         Biomass models are built using destructive, highly costly
+economic conditions and have suffered a long history          sampling procedures and relate the dry weight of bio-
+of over-exploitation accompanied by landscape trans-          mass to dendrometric characteristics; in most cases,
+formations since ancient times. In these forests, the         the diameter at breast height (d) and/or the total height
+non-marketable products and services they provide are         (h) of the tree (Crow and Laidly, 1980; Pardé, 1980).
+usually more valuable than their direct yields, espe-            Softwood species play an important role in the Me-
+cially timber production (Scarascia-Mugnozza et al.,          diterranean Basin forests due to their widespread
+2000). Soil and watershed protection, biodiversity,           distribution and their ecological and socio-economic
+scenic beauty and, increasingly, recreational use, are        value. The most important softwood species in Spain
+the main functions covered by these stands, to which          include: Abies alba Mill. (silver fir), A. pinsapo Boiss.
+carbon sequestration has recently been added in accor-        (pinsapo fir), Juniperus thurifera L. (Spanish juniper),
+dance with international agreements on climatic change        Pinus canariensis Sweet ex Spreng. (Canary Islands
+mitigation (Kyoto Protocol, UNFCCC, EU Forestry               pine), P. halepensis Mill. (Aleppo pine), P. nigra Arn.
+Strategy, Ministerial Conference on the Protection of         (black pine), P. pinaster Ait. (maritime pine), P. pinea
+Forests in Europe).                                           L. (stone pine), P. sylvestris L. (Scots pine) and P. unci-
+   Hence, in the context of this function as mitigators       nata Mill. (mountain pine). These softwood species
+of the effects of climate change, it is important to esti-    occupy more than 9.9 million ha in Spain, of which 6.4
+mate the quantity of biomass present in forests, to           million are pure forests (MARM, 2008).
+understand the way in which the biomass accumulates              The information available for estimating forest
+and how it is distributed among the different fractions       biomass varies from one species to another. A number
+of the tree. This information will provide a basis for        of studies have dealt with biomass estimation in
+further nutrient studies and facilitate research on the       P. sylvestris and P. pinaster, although much of this
+use of biomass in energy production (Schlamadinger            relates to Northern Europe in the case of the former
+and Marland, 1996; Clark et al., 2001). The use of forest     (Marklund, 1988; Lehtonen et al., 2004; Muukkonen,
+inventories as a data source allows us to estimate the        2007) or to the Atlantic range of the species in the case
+quantity of carbon fixed in living vegetation. However,       of Pinus pinaster (Lemoine et al., 1986; Montero et
+depending on the quality and the amount of informa-           al., 1999; Porte et al., 2002; Balboa-Murias et al.,
+tion provided by the forest inventory, the accuracy of        2006). However, less research has been undertaken
+these estimations will vary. National Forest Inventories      with regard to P. nigra (Neirynck et al., 1998; Fattorini
+have provided the basis for several regional and natio-       et al., 2004), P. pinea (Cabanettes and Rapp, 1978;
+nal-level carbon budgets (Dixon et al., 1994; Goodale         Correia et al., 2010) or P. halepensis (Grunzweig et
+et al., 2002).                                                al., 2007). J. thurifera was studied in Morocco for
+   Indirect approaches such as biomass expansion factors      biomass production using non-destructive methods due
+(BEF’s) or biomass equations applied to forest inventory      to its ecological importance (Montes et al., 2000, 2002).
+data (Brown, 2002) are usually used to quantify carbon        As far as the other softwood species are concerned
+sequestration in forests. BEF’s convert stem volume           (A. alba, A. pinsapo, P. canariensis and P. uncinata),
+or stand volume directly into biomass weight estimates,       biomass production has not been studied in any depth
+178                         R. Ruiz-Peinado et al. / Forest Systems (2011) 20(1), 176-188
+
+
+due to their limited distribution, so scarce information     species in Spain. Data for Abies alba were collected
+exists in this regard. Recently, Montero et al. (2005)       in the Pyrenean Mountain Range; for A. pinsapo in the
+fitted a set of biomass models for the main forest spe-      Sierra de Grazalema and Sierra de las Nieves (Southern
+cies in Spain (including those mentioned above), which       Spain); for Juniperus thurifera in Guadalajara (Central
+allow us to quantify the biomass and carbon seques-          Spain); Pinus canariensis on the island of Tenerife
+tration in forest ecosystems. These allometric biomass       (Canary Islands); P. halepensis was sampled in the
+equations relate different tree biomass components           Segura Mountain Range (South East Spain); P. nigra
+(stem, different size branches, foliage, total above-        in the Iberian Mountain Range; P. pinaster in the
+ground biomass and root system) to tree diameter,            Central Mountain Range (Guadalajara, Central Spain)
+although additivity among the component equations            and the Sierra Morena Mountain Range (Ciudad Real,
+was not considered and each component was indepen-           Southern Spain); P. pinea in the Northern Plateau (Cen-
+dently fitted.                                               tral Spain) and Huelva (South-West Spain); P. sylves-
+   Although allometric equations based on dbh provide        tris in the Central Range (Madrid and Segovia, Central
+one of the easiest and most accurate ways to estimate        Spain) and P. uncinata in the Pyrenean Mountain
+root biomass from forest measurements (Drexhage and          Range (Fig. 1).
+Colin, 2001; Le Goff and Ottorini, 2001), it can be useful
+to determine the root:shoot partitioning of biomass for
+the purposes of ecological studies or carbon accoun-         Data
+ting. These ratios can be applied to individual plants
+or stands at local, regional or landscape level (Mokany         For each species, stands were selected in medium
+et al., 2006). Moreover, National Greenhouse Gas In-         quality sites (medium site index) distributed according
+ventories under the IPCC, generally employ root:shoot        to age classes. Average trees and growing conditions
+ratios to estimate root biomass and specific values are      were chosen for the destructive sample. Because
+often unavailable.                                           A. pinsapo is a protected species, the sample trees were
+   In order to improve the existing biomass estimations      not as representative as those of other species and it
+and to offer more precise information on carbon accu-        was not possible to collect belowground samples. Trees
+mulation in Spanish forests, new biomass equations           were sampled by 5 cm diameter classes, starting at
+for conifer species have been developed in this study.       7.5 cm up to the maximum diameter found in the area.
+The use of methods that guarantee the additivity pro-        The number of sample trees varied from a minimum
+perty among tree biomass components provides consis-         of 21 trees in the case of J. thurifera and P. uncinata to
+tency between total tree and tree component biomass          a maximum of 305 trees for P. sylvestris. For each
+and also ensures greater statistical efficiency (Parresol,   sample tree, diameter at breast height (1.30 m) (d),
+1999, 2001). Furthermore, the inclusion of tree height       total height (h) and crown height (hc) were measured.
+in biomass equations as an additional predictor varia-       The minimum diameters sampled were between 6.2 for
+ble, could improve the accuracy of the biomass estima-       P. sylvestris and 10.0 for P. canariensis and P. nigra.
+tions (Ketterings et al., 2001). The objectives of this      The maximum diameters ranged from 41.0 cm for
+study were: i) to determine the extent to which the use      P. uncinata to 77.3 cm for P. nigra (Table 1).
+of additive methods and the inclusion of tree height as         Sampled trees were felled and separated into biomass
+an independent variable improve biomass estimations          components in the f ield. The biomass components
+in the studied species; and ii) to analyse the root:shoot    considered were: stem with bark (commercial volume,
+partitioning of biomass for the main softwood species        up to a top diameter of 7 cm), thick branches (diameter
+in Spain.                                                    larger than 7 cm), medium branches (diameter between
+                                                             2 and 7 cm), thin branches (branches with a diameter
+                                                             smaller than 2 cm) and needles (Montero et al., 1999).
+Material and methods                                         Estimation of root biomass was only undertaken on a
+                                                             few trees per species and diameter class due to the
+Study area                                                   complexity and cost of the work involved (Table 1).
+                                                             The root component was collected using a backhoe, by
+  Individual tree biomass data were collected in repre-      digging a trench around the stump and extracting all
+sentative regions across the natural range of the studied    the roots inside this hole. Using this approach, most
+                                  Biomass models for the main softwood species in Spain                                       179
+
+
+
+
+Figure 1. Distribution of the sample zones in Spain for the studied species. Aa: Abies alba. Ap: A. pinsapo. Jt: Juniperus thurife-
+ra. Pc: Pinus canariensis. Ph: P. halepensis. Pn: P. nigra. Ppt: P. pinaster. Ppn: P. pinea. Ps: P. sylvestris. Pu: P. uncinata.
+
+
+of the root system was extracted. Fine roots were not               102°C to constant weight. Thus, it was possible to de-
+captured by this method.                                            termine moisture content and estimate dry matter. In
+   Each component was weighed in the f ield (fresh                  those cases where the stem could not be weighed in the
+weight) and a representative sample (10 kg) of each of              field, the diameter was measured at meter intervals up
+them was taken to the laboratory to be oven-dried at                the stem in order to determine the log volumes using
+
+Table 1. Minimum, maximum and mean values for diameter, height and biomass sample weight for the studied species
+
+                          dbh                    height               Aboveground biomass                  Root biomass
+    Species
+                  Min     Max    Mean     Min     Max     Mean      n      Min     Max    Mean       n      Min     Max    Mean
+
+A. alba            9.0    57.5    30.4     8.0    29.0    18.5      29      27    2,503    661       10       8      394    132
+A. pinsapo         7.0    51.0    27.3     4.0    21.5    11.3      29       7      624    200       —       —       —       —
+J. thurifera       9.5    49.8    25.7     3.5     8.9     5.8      21      23      539    205        8      12      130     69
+P. canariensis    10.0    53.0    29.8     9.0    27.6    18.0      27      22    2,292    595       13       7      428    177
+P. halepensis      8.0    44.0    23.2     4.6    12.5     9.1      54      13      703    171        9       3      190     64
+P. nigra          10.0    77.3    35.4     5.2    22.6    12.9      50      23    3,274    791       13       8      811    234
+P. pinaster        7.0    64.0    19.7     6.1    20.7    11.6     199       5    1,521    116       10       6      325    115
+P. pinea           9.0    63.0    29.2     4.3    21.2    10.3      54      16    2,225    426       13       6      777    235
+P. sylvestris      6.2    76.0    18.1     4.6    27.7    10.9     305       8    3,368    175       14       4    1,193    125
+P. uncinata        8.0    41.0    25.6     7.3    20.1    15.6      21      16      868    346        7       3      401    146
+
+dbh: diameter at breast height (cm). height: total height (m). Abov. biomass: aboveground biomass weight (kg). Root biomass: root
+biomass weight (kg). Min: minimum. Max: maximum. Mean: mean. n: number of samples.
+180                               R. Ruiz-Peinado et al. / Forest Systems (2011) 20(1), 176-188
+
+
+Smalian’s formula. Dry weight was calculated by
+                                                                                               ∑ ( yi – yˆi)
+                                                                                                  n
+
+applying the basic wood density for the different spe-                              MRES =
+                                                                                                  i=1
+                                                                                                                              [1]
+cies (Gutiérrez Oliva and Plaza Pulgar, 1967). Needles                                                    n
+were totally separated and weighed in the case of small
+                                                                                                ∑ ( yi – yˆi)
+                                                                                                      n         2
+
+trees, while a subsample of thin branches with foliage                             RMSE =
+                                                                                                      i=1
+                                                                                                                              [2]
+was taken to estimate foliage mass in larger trees.                                                       n–p
+   Maximum and minimum aboveground biomass for
+                                                                                            ∑ ( yi – yˆi)
+                                                                                                      n         2
+the conifer species sampled ranged from 5 kg for
+                                                                                                      i=1
+P. pinaster to 3,368 kg for P. sylvestris and belowground                         MEF = 1 –                                   [3]
+                                                                                            ∑ ( yi – y¯i)
+                                                                                                      n         2
+biomass ranged from 3 kg (P. halepensis and P. unci-                                                  i=1
+nata) to 1,193 kg (P. sylvestris).                                where yi is the observed value, ŷi is the estimated value,
+                                                                  ȳ i is the mean observed value, n is the number of
+                                                                  observations and p is the number of parameters in the
+Biomass equations                                                 model.
+                                                                       Afterwards, the best models selected were simulta-
+   Different linear and non-linear equations found in             neously f itted using joint generalized regression
+biomass literature (Table 2) were tested for relating the         (known as Seemingly Unrelated Regressions, SUR)
+weight of the biomass components to tree variables for            (Zellner, 1962) to make consistent estimates of the
+each species using diameter at breast height (d) and              different components with non-linear systems (Parresol,
+tree height (h) as independent variables.                         2001; Bi et al., 2004) (system of equations 4). This
+   In a first step, the best model for each component             method takes into account cross-equation error corre-
+and species was chosen, based on graphical analysis               lation in order to come up with the sum of total aerial
+of residuals and fitting statistics (bias and precision),         biomass components (additivity property). The em-
+computing the mean residuals (MRES), root mean                    ployment of this technique guarantees that total above-
+square error (RMSE), model efficiency (MEF) (equa-                ground biomass will be the sum of the tree component
+tions 1-3) (Gadow et al., 2001) and the Akaike infor-             estimations.
+mation criterion (AIC) (Akaike, 1974). The biological
+                                                                                          W1 = ƒ1 (α1, β1) + ε1
+behaviour of the model was also evaluated in order to
+                                                                                          W2 = ƒ2 (α2, β2) + ε2
+choose the best equations.
+                                                                                                   …                           [4]
+                                                                                          Wk = ƒk (αk, βk) + εk
+Table 2. Biomass models evaluated for the different tree                 Wtotal = ƒtotal (α1, β2, … αk, β1, β2, … βk) + εtotal
+components                                                           Weighted regression was used to avoid heterosce-
+                           Model tested                           dasticity, frequently present in biomass data. Each
+                                                                  observation was weighted by the inverse of its variance
+W=α+β·d                                                           to homogenize the variance of residuals. This weigh-
+W = α + β · d2
+                                                                  ting factor was estimated through a power function of
+W=α+β·d·h
+W = α + β · d2 · h                                                an independent variable as explained by Parresol (2001)
+W = α + β · d + λ · d2                                            and Balboa-Murias et al. (2006).
+W = α + β · d + λ · d2 + θ · d2 · h                                  The possible presence of multicollinearity was veri-
+W=α+β·d+λ·h                                                       fied through the condition number (Myers, 1990). Mo-
+W = α + β · d2 + λ · d2 · h                                       del fits were performed using the MODEL procedure
+W = α + β · d2 + λ · h
+                                                                  in the SAS/ETS software (SAS Institute Inc., 2004).
+W = α + β · d2 + λ · h + θ · d2 · h
+W = α + β · d2 + λ · d · h                                           In order to evaluate the predictive accuracy of the
+W = α + β · d2 · h + λ · d · h                                    system of equations, they were compared with the
+W = α + β · dλ · hθ                                               equations previously proposed by Montero (2005) for
+W = α + β · dλ                                                    these Mediterranean species whose models were fitted
+W = α + β · (d2 · h)λ                                             separately for each biomass component using log trans-
+W: Biomass weight (kg). d: dbh (cm). h: tree height (m).          formed data and OLS regression. The RMSE and MEF
+α, β, λ, θ: parameters of the models.                             ratios (equations 5 and 6) obtained using both systems
+                               Biomass models for the main softwood species in Spain                                 181
+
+
+of equations were used in the comparison (Bi et al.,             biomass of a tree. Honestly Significant Difference tests
+2004).                                                           (HDS) suitable for multiple comparisons were applied
+                      RMSE (this study)                          to the relationships in order to identify differences
+     RMSEratio = ——————————————— [5]                             between species.
+                  RMSE (Montero et al., 2005)
+                      MEF (this study)
+      MEFratio = ———————————————                        [6]
+                  MEF (Montero et al., 2005)                     Results
+                                                                    Best models, independently fitted for each component
+Root:shoot ratios                                                and specie, were later included in the SUR f itting
+                                                                 (Table 3). Tree diameter was the variable that showed
+   Root:shoot ratios were calculated as the dry mass             the best correlation with biomass weight for all tree
+relationship between belowground and aboveground                 components. Tree height was also included in all stem
+
+
+Table 3. Selected biomass models from SUR fitting statistics for softwood species
+
+  Species/components                                Model                               MRES        RMSE        MEF
+
+Abies alba Mill.
+Stem                    Ws = 0.0189 · d2 · h                                             19.24       73.27       0.97
+Thick + Medium branches Wb7+Wb27 = 0.0584 · d2                                            2.62       37.42       0.75
+Thin branches + needles Wb2+n = 0.0371 · d2 + 0.968 · h                                   3.12       21.64       0.77
+Roots                   Wr = 0.101 · d2                                                   1.98      121.79       0.89
+
+Abies pinsapo Boiss.
+Stem                      Ws = 0.00960 · d2 · h                                         –10.09       36.82       0.85
+Thick branches            If d ≤ 32.5 cm then Z = 0; If d > 32.5 cm then Z = 1;
+                          Wb7 = [1.637 · (d-32.5)2 – 0.0719 · (d-32.5)2 · h] · Z          6.23       15.32       0.69
+Medium branches           Wb2-7 = 0.00344 · d2 · h                                        2.25       23.84       0.70
+Thin branches + needles   Wb2+n = 0.131 · d · h                                          –0.17       25.30       0.47
+
+Juniperus thurifera L.
+Stem                      Ws = 0.0132 · d2 · h + 0.217 · d · h                           –1.96       14.34       0.98
+Thick branches            If d ≤ 22.5 cm then Z = 0; If d > 22.5 cm then Z = 1;
+                          Wb7 = [0.107 · (d-22.5)2] · Z                                   2.37        8.87       0.82
+Medium branches           Wb2-7 = 0.00792 · d2 · h                                        0.41       11.90       0.92
+Thin branches + needles   Wb2+n = 0.273 · d · h                                           3.03       16.59       0.79
+Roots                     Wr = 0.0767 · d2                                               –0.82       24.97       0.69
+
+Pinus canariensis Sweet ex Spreng.
+Stem                      Ws = 0.0249 · (d2 · h)0.975                                     2.39       51.84       0.98
+Thick branches            If d ≤ 32.5 cm then Z = 0; If d > 32.5 cm then Z = 1;
+                          Wb7 = [0.634 · (d-32.5)2] · Z                                  16.85       30.09       0.79
+Medium branches           Wb2-7 = 0.00162 · d2 · h                                        2.44       20.93       0.71
+Thin branches + needles   Wb2+n = 0.0844 · d2 – 0.0731 · h2                               2.12       28.02       0.77
+Roots                     Wr = 0.155 · d2                                                –2.02       54.27       0.89
+
+Pinus halepensis Mill.
+Stem                      Ws = 0.0139 · d2 · h                                           –4.13       21.43       0.93
+Thick branches            If d ≤ 27.5 cm then Z = 0; If d > 27.5 cm then Z = 1;
+                          Wb7 = [3.926 · (d-27.5)] · Z                                    1.54       14.75       0.61
+Medium branches           Wb2-7 = 4.257 + 0.00506 · d2 · h – 0.0722 d · h                –0.19        7.54       0.91
+Thin branches + needles   Wb2+n = 6.197 + 0.00932 · d2 · h – 0.0686 · d · h              –1.14       13.79       0.93
+Roots                     Wr = 0.0785 · d2                                                0.40       23.46       0.87
+182                            R. Ruiz-Peinado et al. / Forest Systems (2011) 20(1), 176-188
+
+
+Table 3 (cont.). Selected biomass models from SUR fitting statistics for softwood species
+
+  Species/components                                    Model                                   MRES         RMSE          MEF
+
+Pinus nigra Arn.
+Stem                         Ws = 0.0403 · d1.838 · h0.945                                       –2.73        71.13         0.99
+Thick branches               If d ≤ 32.5 cm then Z = 0; If d > 32.5 cm then Z = 1;
+                             Wb7 = [0.228 · (d-32.5)2] · Z                                       18.89        25.33         0.85
+Medium branches              Wb2-7 = 0.0521 · d2                                                 –1.31        31.48         0.89
+Thin branches + needles      Wb2+n = 0.0720 · d2                                                 –1.44        26.86         0.95
+Roots                        Wr = 0.0189 · d2.445                                                 0.80        30.14         0.98
+
+Pinus pinaster Ait.
+Stem                    Ws = 0.0278 · d2.115 · h0.618                                            –0.42        14.47         0.99
+Thick + Medium branches Wb7+Wb27 = 0.000381 · d3.141                                              0.21         7.04         0.89
+Thin branches + needles Wb2+n = 0.0129 · d2.320                                                  –0.03         7.67         0.89
+Roots                   Wr = 0.00444 · d2.804                                                    –6.65        20.29         0.99
+
+Pinus pinea L.
+Stem                         Ws = 0.0224 · d1.923 · h1.0193                                      –6.70        36.76         0.99
+Thick branches               If d ≤ 22.5 cm then Z = 0; If d > 22.5 cm then Z = 1;
+                             Wb7 = [0.247 · (d-22.5)2] · Z                                        8.76        46.17         0.86
+Medium branches              Wb2-7 = 0.0525 · d2                                                  2.88        29.46         0.80
+Thin branches + needles      Wb2+n = 21.927 + 0.0707 · d2 – 2.827 · h                             1.95        19.65         0.90
+Roots                        Wr = 0.117 · d2                                                      1.38        14.86         0.98
+
+Pinus sylvestris L.
+Stem                         Ws = 0.0154 · d2 · h                                                 2.23        34.01         0.99
+Thick branches               If d ≤ 37.5 cm then Z = 0; If d > 37.5 cm then Z = 1;
+                             Wb7 = [0.540 · (d-37.5)2 – 0.0119 · (d-37.5)2 · h] · Z               0.14        12.63         0.86
+Medium branches              Wb2-7 = 0.0295 · d2.742 · h–0.899                                   –0.24        10.83         0.87
+Thin branches + needles      Wb2+n = 0.530 · d2.199 · h–1.153                                     0.73        11.41         0.87
+Roots                        Wr = 0.130 · d2                                                      1.55       110.17         0.98
+
+Pinus uncinata Mill.
+Stem                    Ws = 0.0203 · d2 · h                                                      7.56        70.81         0.90
+Thick + Medium branches Wb7+Wb27 = 0.0379 · d2                                                    1.41        15.86         0.64
+Thin branches + needles Wb2+n = 2.740 · d – 2.641 · h                                             1.27        14.86         0.66
+Roots                   Wr = 0.193 · d2                                                           8.17        81.86         0.68
+
+Ws: Biomass weight of the stem fraction (kg). Wb7: Biomass weight of the thick branch fraction (diameter larger than 7 cm) (kg).
+Wb2-7: Biomass weight of medium branch fraction (diameter between 2 and 7 cm) (kg). Wb2+n Biomass weight of thin branch fraction
+(diameter smaller than 2 cm) with needles (kg). Wr: Biomass weight of the belowground fraction (kg); d: dbh (cm). h: tree height (m).
+
+
+fraction models, although it did not always appear in                    Parameters of the models from SUR fitting and sta-
+the models for the other biomass components. Fur-                    tistics for bias and precision (MRES, RMSE and MEF)
+thermore, most of the stem fraction models had the                   are shown in Table 3. Every parameter was significant
+standard allometric form:                                            at the 95% confidence level. Predicted values versus ob-
+                                                                     served values for total aboveground biomass did not show
+                        Ws = a ·db · hc                     [7]
+                                                                     presence of bias in the models fitted (Fig. 2). Due to
+where Ws is the weight of stem biomass, d is the dbh, h              multicollinearity problem, it was not possible to include
+is the total height, a, b and c are parameters of the                an individual model for needles in any species, this latter
+model.                                                               fraction being included in the thin branch component.
+   For all species, the belowground biomass fraction                     Stem models had good MEF values, being higher
+depended exclusively on the diameter variable.                       than 0.87 for these softwood species. Branch models
+                                            Biomass models for the main softwood species in Spain                                                          183
+
+
+                                      Abies alba                                       Abies pinsapo                                 Juniperus thurifera
+                                                                            600                                             500
+                       1,500
+                                                                            400
+            Observed
+
+
+
+
+                                                           Observed
+
+
+
+
+                                                                                                                Observed
+                                                                                                                            300
+                        500                                                 200
+                                                                                                                            100
+                          0                                                   0
+                               0   500 1,000 1,500 2,000                          0 100      300 500                                100 200 300 400 500
+                                      Predicted                                            Predicted                                      Predicted
+
+                                   Pinus canariensis                                  Pinus halepensis                                     Pinus nigra
+                                                                            600                                            3,000
+                        600
+            Observed
+
+
+
+
+                                                           Observed
+
+
+
+
+                                                                                                                Observed
+                                                                            400                                            2,000
+                        400                                                                                                1,000
+                                                                            200
+                          0                                                   0                                               0
+                               0 200 400 600 8001,000                             0 100      300 500                               0 500     1,500 2,500
+                                     Predicted                                             Predicted                                        Predicted
+                                    Pinus pinaster                                        Pinus pinea                                  Pinus sylvestris
+                       1,500                                                                                               3,000
+            Observed
+
+
+
+
+                                                           Observed
+
+
+
+
+                                                                                                                Observed
+                       1,000                                          1,500                                                2,000
+                        500                                                                                                1,000
+                                                                            500
+                           0                                                  0                                                0
+                               0     500 1,000 1,500                              0         1,000       2,000                      0 500     1,500 2,500
+                                      Predicted                                            Predicted                                        Predicted
+
+                                                                                      Pinus uncinata
+
+                                                                            600
+                                                                 Observed
+
+
+
+
+                                                                            200
+                                                                              0
+                                                                                  0       200 400       600
+                                                                                           Predicted
+            Figure 2. Observed and predited values for aboveground biomass of the studied species.
+
+
+showed more variability, presenting smaller MEF                                               P. uncinata, which do not normally have a large number
+values for A. alba and P. uncinata. Thick branch models                                       of thick branches, the sample size for this component
+for P. canariensis and P. nigra also yielded high bias                                        was so limited that it was included in the medium
+values (MRES). Regarding root biomass, the model                                              branch component.
+efficiency was always greater than 0.85 except in the                                            Comparison with previous models developed by
+cases of J. thurifera and P. uncinata. The bias of the                                        Montero et al. (2005) through RMSE and MEF ratios,
+root models was also higher in these species than in                                          showed that RMSE ratio values are equal to or less than
+the rest.                                                                                     1.0 in all cases (the RMSE values for the newer models
+   In some cases, the thick branch component was absent                                       were lower than those for the previous equations) (Ta-
+in smaller trees as this fraction only appears when trees                                     ble 4). Large differences in RMSE were revealed when
+reach a certain size. Therefore, the available sample                                         this ratio was small, as in the thick branch fraction in
+size for this component was smaller than for the rest                                         P. pinea or the stem fraction ratio in P. pinaster and
+of components and the equation was only suitable for                                          P. sylvestris, which all exhibited values below 0.5. MEF
+trees with a larger threshold diameter. For this reason,                                      ratios presented values equal to or higher than 1.0 (the
+models for the thick branch component presented a                                             MEF values for the newer models were equal to or
+restriction based on a threshold diameter, which varied                                       higher than those of the previous ones). The im-
+from 22.5 cm for P. pinea and J. thurifera to 37.5 cm                                         provement in model efficiency was particularly notable
+for P. sylvestris. In the cases of A. alba, P. pinaster and                                   for the thick branch component and the thin branch
+184                                 R. Ruiz-Peinado et al. / Forest Systems (2011) 20(1), 176-188
+
+
+Table 4. Root mean square error (RMSE) and model efficiency (MEF) ratios to compare additive equations fitted in this
+study and Montero et al. (2005) equations (fitted separately for each biomass component using log transformed data)
+
+                                               RMSE ratio                                                    MEF ratio
+
+                                                                   Branches                                                Branches
+                             Above      Stem                                             Above       Stem
+                                                                              Thin +                                                       Thin +
+                                                     Thick         Medium                                       Thick        Medium
+                                                                              needles                                                      needles
+
+A. alba                      0.76       0.57         0.98            0.98      0.99        1.03       1.07        1.01          1.01         1.00
+A. pinsapo                   0.89       0.81         0.92            1.00      1.00        1.03       1.11        1.09          1.00         1.00
+J. thurifera                 0.88       0.66         0.98            0.91      0.99        1.01       1.05        1.00          1.02         1.01
+P. canariensis               0.95       0.67         0.94            0.84      0.89        1.00       1.02        1.08          1.02         1.05
+P. halepensis                0.61       0.74         0.81            0.83      0.78        1.04       1.06        1.50          1.05         1.05
+P. nigra                     0.78       0.66         0.84            0.53      0.99        1.01       1.01        1.08          1.47         1.00
+P. pinaster                  0.83       0.43         0.81            0.81      0.96        1.01       1.06        1.07          1.07         1.01
+P. pinea                     0.77       0.57         0.41            0.69      0.31        1.19       1.03        1.48          1.16         1.49
+P. sylvestris                0.87       0.47         0.70            0.97      0.95        1.00       1.04        1.21          1.01         1.02
+P. uncinata                  0.95       0.74         0.96            0.96      0.97        1.01       1.09        1.05          1.05         1.03
+
+
+(with needle) component in P. pinea, as well as for the                        P. halepensis or 40.0% for J. thurifera, to 65.7% for
+thick branch fraction in P. halepensis and the medium                          A. alba and 61.6% for P. pinaster. Crown fraction was
+branch component in P. nigra.                                                  also an important biomass component, with maximum
+   The partitioning of tree biomass into stem, crown                           values of 38.7% and 36.6% for P. halepensis and J. thu-
+(branches + foliage) and belowground components is                             rifera respectively, and minimum values of 11.4% in
+shown in Figure 3, using the models developed for an                           the case of P. uncinata and 14.9% for P. canariensis.
+average tree with a dbh of 35 cm and height calculated                         Root biomass accounted for between a third and a fifth
+from the sample. The stem was the biggest fraction in                          of the total tree biomass, with maximum values of
+all cases for these conifer species. The contribution of                       29.3% and 28.8 % for P. uncinata and P. sylvestris res-
+the stem to total tree biomass varied from 39.9% for                           pectively and minimum values of of 16.2% for A. alba
+                                                                               and 18.6% for P. nigra.
+ 100                                                                              The root:shoot ratios for the species analysed in this
+                                                                               study are reported in Table 5. The mean ratios between
+    90
+                                                                               belowground and aboveground biomass varied from
+    80                                                                         0.18 (A. alba) to 0.38 (P. uncinata), with a mean value
+    70
+                                                                               Table 5. Root:shoot ratios for the studied species, standard
+    60
+                                                                               error and multiple comparisons
+%
+
+
+
+
+    50
+                                                                                                     Root:shoot
+    40                                                                                                              Groups             Std. error
+                                                                                                       ratio
+    30
+                                                                               A. alba                  0.183             d             0.0164
+    20                                                                         J. thurifera             0.343            a, b           0.0356
+    10
+                                                                               P. canariensis           0.259            c, d           0.0261
+                                                                               P. halepensis            0.229            c, d           0.0146
+     0                                                                         P. nigra                 0.240            c, d           0.0116
+         Aa    Jth      Pc     Ph      Pn   Ppt      Ppn      Ps      Pu
+                                                                               P. pinaster              0.285            b, c           0.0132
+                     Root     Branches and needles         Stem                P. pinea                 0.243            c, d           0.0143
+Figure 3. Comparison of biomass partitioning between soft-                     P. sylvestris            0.279            b, c           0.0217
+wood species for a mean tree with a dbh of 35 cm (mean height                  P. uncinata              0.385             a             0.0426
+to this diameter was calculated from the original data).                       Softwoods                0.265            —              0.0274
+Aa: Abies alba. Jth: Juniperus thurifera. Pc: Pinus canarien-
+sis. Ph: P. halepensis. Pn: P. nigra. Ppt: P. pinaster. Ppn: P. pi-            Significant differences are shown by different letters (HSD test;
+nea. Ps: P. sylvestris. Pu: P. uncinata.                                       α = 0.05; p < 0.001).
+                               Biomass models for the main softwood species in Spain                                185
+
+
+of 0.27 for the softwood species studied. Statistical        fitted separately, using ordinary least squares regression.
+differences were found between species: A. alba pre-         The improvement in model efficiency reached around
+sented the lowest value different from the rest of spe-      50% for the thick branch component of P. halepensis
+cies; the Pinus species showed similar values between        and P. pinea as well as for the thin branch (with needles)
+them and J. thurifera and P. uncinata exhibited a large      component of P. pinea (Table 4). For total aboveground
+variability and presented similar values.                    biomass, the greatest improvements were found for
+                                                             P. pinea.
+                                                                In the case of the stem biomass component, all the
+Discussion                                                   models fitted were non-linear with an allometric ex-
+                                                             pression including dbh and total height. This ex-
+   The estimation of forest carbon stocks from forest        pression is very similar to those used for volume esti-
+inventories requires the use of accurate and unbiased        mations, yielding high model efficiency values. Many
+biomass models. In this study, new biomass estimation        authors have highlighted the suitability of this combi-
+models for the main forest species in Spain have been        nation of variables for stem biomass predictions (Bi et
+developed in order to improve on the performance of          al., 2004; Antonio et al., 2007). For the other tree compo-
+previous models which did not consider the additivity        nents (branches of different diameter sizes), models
+property (Montero et al., 2005); the latter being a desi-    could be either linear or non-linear, with dbh and/or tree
+rable attribute for a system of biomass component            height appearing by themselves with different parameters
+equations. The use of the nonlinear seemingly unrela-        or together in various different combinations. The coeffi-
+ted regressions (NSUR) method to fit the system of           cients related to dbh were in most cases positive numbers,
+equations guarantees this property, giving consistency       showing that biomass increases with diameter. Conver-
+(Kozak, 1970) and reducing the confidence and predic-        sely, coefficients related to tree height were sometimes
+tion intervals of the biomass estimations (Parresol,         negative, particularly for crown fractions, indicating
+1999, 2001).                                                 that for the same diameter size, taller trees allocate less
+   The new models included tree height as an indepen-        biomass to the crown due to the processes involved in
+dent variable in some components, resulting in impro-        competition for light (Lambert et al., 2005).
+ved model fit statistics. Other authors have also reported      The ability of the model to predict biomass is lower
+improvements in biomass estimations where height and         for branch components than for the stem (Table 3).
+diameter (rather than just diameter) dependent models        Branch and foliage biomass are more dependent than
+are used (Lambert et al., 2005; Cienciala et al., 2006).     bole biomass on tree competition and stand density,
+By including tree height, information regarding the          hence they present greater variability (Cole and Ewel,
+competitive environment (stand age, site index, den-         2006; Návar, 2009). The high variability in crown bio-
+sity...) is indirectly considered in the model (Wirth et     mass displayed by P. pinea trees is due to frequent pru-
+al., 2004). This fact makes the model more general and       ning for fruit and firewood production.
+permits the use of the equation for different sites             A number of authors have proposed the use of gene-
+(Ketterings et al., 2001). Other independent variables       ral equations to estimate aboveground biomass per
+like crown length have been tested in other studies for      genus or group of species (Pastor et al., 1983/1984)
+crown biomass estimation (Carvalho and Parresol,             (Schroeder et al., 1997). However, the variability found
+2003; Antonio et al., 2007). However, in order to assure     in allometric ratios and in biomass component equa-
+the applicability of the models, we have not considered      tions among the studied species, suggests that separate
+this variable because it is not available in the Spanish     equations for each species are essential to accurately
+National Forest Inventory and is not usually measured        estimate biomass per fraction of the tree. This informa-
+in forest inventories.                                       tion is required to estimate nutrient stocks, biomass
+   As a consequence of considering simultaneous fitting      amounts for firewood after treatment or to consider
+and the use of tree height as a predictor variable, the      different management options in relation to the nutrient
+additive biomass equations presented in this study re-       cycle and carbon stocks (Balboa-Murias et al., 2006;
+present a considerable improvement on those propo-           Cole and Ewel, 2006; Bravo et al., 2008).
+sed by Montero et al. (2005) for the studied species.           Belowground biomass is not generally considered
+The latter were fitted to the same data, but log transfor-   in biomass studies because of the high-cost and diffi-
+med data were used and each biomass component was            culty involved in sampling, even though it makes up a
+186                        R. Ruiz-Peinado et al. / Forest Systems (2011) 20(1), 176-188
+
+
+significant part of the total tree biomass. In the case        In Mediterranean forests, where wood production
+of the species studied, the root weight model depends       is not the main function, these biomass estimates by
+exclusively on tree diameter, as determined by Drexhage     component are highly useful to define the best forest
+and Colin (2001) or Le Goff and Ottorini (2001).            management practices to be followed and to identify
+   As regards the relationship between belowground          the role of the forest as a carbon sink.
+and aboveground biomass (stem, branches and needles),
+Kurz et al. (1996) found differences in the relationships
+between softwood and hardwood species. However,             Acknowledgments
+Cannell (1982) and Cairns et al. (1997) found no sig-
+nificant differences between species groups and repor-         We would like to thank all those who participated
+ted general root:shoot ratio figures of 0.26 for conifers   in the field work, especially M. Muñoz and E. Garriga,
+and 0.25 for deciduous. The figure for conifers in the      as well as S. Mutke for his comments on the manu-
+present study is in accordance with this general value.     script. This study was partially financed by projects
+Levy et al. (2004) found a mean root:shoot ratio for        OT-03-002 and PSS-310000-2009-22.
+conifers in Great Britain of 0.359. This mean value
+differs from our result, although the f igures they
+present for P. sylvestris (0.301) and P. nigra (0.224)      References
+are similar to our figures for these species. Correia et
+al. (2010) reported a root:shoot ratio for P. pinea of      AKAIKE H., 1974. A new look at the statistical model iden-
+0.30 for trees at low densities. This value is slightly       tification. IEEE Transactions on Automatic Control 19,
+higher than ours, although our samples were collected         716-723.
+at higher densities so there may have been greater com-     ANTONIO N., TOMÉ M., TOMÉ J., SOARES P., FONTES
+                                                              L., 2007. Effect of the tree, stand and site variables of the
+petition between trees. Although the root:shoot ratio         allometry of Eucalyptus globulus tree biomass. Can J For
+can vary depending on tree size and stand characte-           Res 37, 895-906.
+ristics, these high observed values highlight the impor-    BALBOA-MURIAS M.A., RODRÍGUEZ-SOALLEIRO R.,
+tance of the root fraction in Mediterranean forests.          MERINO A., ÁLVAREZ-GONZÁLEZ J.G., 2006. Tem-
+   Although we took samples from a broad range of             poral variations and distribution of carbon stocks in
+diameters, only a small number of root samples were           aboveground biomass of radiata pine and maritime pine
+                                                              pure stands under different silvicultural alternatives. For
+taken to evaluate belowground biomass and soil types          Ecol Manage 237, 29-38.
+were not checked as part of this study. Therefore,          BI H.Q., TURNER J., LAMBERT M.J., 2004. Additive bio-
+further research into belowground biomass in Medi-            mass equations for native eucalypt forest trees of tempe-
+terranean forests may be necessary.                           rate Australia. Trees-Struct Funct 18, 467-479.
+                                                            BRAVO F., BRAVO-OVIEDO A., DÍAZ BALTEIRO L.,
+                                                              2008. Carbon sequestration in Spanish Mediterranean
+                                                              forest under two management alternatives: a modeling
+Conclusions                                                   approach. Eur J Forest Res 127, 225-234.
+                                                            BROWN S., 2002. Measuring carbon in forests: current
+   The use of seemingly unrelated regression and the          status and future challenges. Environmental Pollution 116,
+large sample size employed to fit the models, result in       363-372.
+accurate additive biomass equations for the main            CABANETTES A., RAPP M., 1978. Biomass, nutrient dis-
+Spanish Mediterranean forest species and provide a            tribution and productivity in a Pinus pinea forest.1. Bio-
+                                                              mass. Oecologia Plantarum 13, 271-286.
+considerable improvement on the existing equations.         CAIRNS M.A., BROWN S., HELMER E.H., BAUMGARDNER
+Given that the Spanish National Forest Inventory (NFI)        G.A., 1997. Root biomass allocation in the world’s upland
+identifies the forest species and records tree diameter       forests. Oecologia 111, 1-11.
+and height of all sample trees per plot, the models         CANNELL M.G.R., 1982. World forest biomass and primary
+developed could be applied to NFI data, allowing              production data. Academic Press, London. 391 pp.
+ecosystem-wide, regional and national carbon accounts.      CARVALHO J.P., PARRESOL B.R., 2003. Additivity in tree
+                                                              biomass components of Pyrenean oak (Quercus pyrenaica
+   Belowground biomass accounts for a signif icant            Willd.). For Ecol Manage 179, 269-276.
+proportion of total biomass in Mediterranean ecosys-        CIENCIALA E., CERNY M., TATARINOV F., APLTAUER
+tems, which must be considered and quantified in order        J., EXNEROVA Z., 2006. Biomass functions applicable
+to obtain complete biomass and carbon estimations.            to Scots pine. Trees-Struct Funct 20, 483-495.
+                                Biomass models for the main softwood species in Spain                                    187
+
+
+CLARK D.A., BROWN S., KICKLIGHTER D.W., CHAMBERS                 del of the Canadian forest sector Can J For Res 26,
+  J.Q., THOMLINSON J.R., NI J., 2001. Measuring net              1973-1979.
+  primary production in forests: concepts and field methods.   LAMBERT M.C., UNG C.H., RAULIER F., 2005. Canadian
+  Ecological Applications 11, 356-370.                           national tree aboveground biomass equations. Can J For
+COLE T.G., EWEL J.J., 2006. Allometric equations for             Res 35, 1996-2018.
+  four valuable tropical tree species. For Ecol Manage 229,    LE GOFF N., OTTORINI J.M., 2001. Root biomass and
+  351-360.                                                       biomass increment in a beech (Fagus sylvatica L.) stand
+CORREIA A.C., TOMÉ M., PACHECO C.A., FAIAS S.,                   in North-East France. Ann For Sci 58, 1-13.
+  DIAS A.C., FREIRE J., CARVALHO P.O., PEREIRA J.S.,           LEHTONEN A., CIENCIALA E., TATARINOV F., MAKIPAA
+  2010. Biomass allometry and carbon factors for a Medi-         R., 2007. Uncertainty estimation of biomass expansion
+  terranean pine (Pinus pinea L.) in Portugal. Forest Sys-       factors for Norway spruce in the Czech Republic. Ann For
+  tems 19, 418-433.                                              Sci 64, 133-140.
+CROW T.R., LAIDLY P.R., 1980. Alternative models for es-       LEHTONEN A., MAKIPAA R., HEIKKINEN J., SIEVANEN
+  timating woody plant biomass. Can J For Res 10, 367-370.       R., LISKI J., 2004. Biomass expansion factors (BEFs)
+DIXON R.K., BROWN S., HOUGHTON R.A., SOLOMON                     for Scots pine, Norway spruce and birch according
+  A.M., TREXLER M.C., WISNIEWSKI J., 1994. Carbon                to stand age for boreal forests. For Ecol Manage 188,
+  pools and flux of global forest ecosystem. Science 263,        211-224.
+  185-190.                                                     LEMOINE B., GELPE J., RANGER J., NYS C., 1986. Bio-
+DREXHAGE M., COLIN F., 2001. Estimating root sys-                mass and growth of maritime pine - a study of variability
+  tem biomass from breast-height diameters. Forestry 74,         in a 16 years old stand. Ann Sci For 43, 67-84.
+  491-497.                                                     LEVY P.E., HALE S.E., NICOLL B.C., 2004. Biomass ex-
+FANG J.Y., CHEN A.P., PENG C.H., ZHAO S.Q., CI L.,               pansion factors and root:shoot ratios for coniferous tree
+  2001. Changes in forest biomass carbon storage in China        species in Great Britain. Forestry 77, 421-430.
+  between 1949 and 1998. Science 292, 2320-2322.               MARKLUND L.G., 1988. Biomass functions for pine, spru-
+FATTORINI L., GASPARINI P., NOCETTI M., TABACCHI                 ce and birch in Sweden. Rapport-Sveriges Lantbruks-
+  G., TO V., 2004. Above-ground tree phytomass predic-           universitet, Institutionen foer Skogstaxering (Sweden).
+  tion and preliminary shrub phytomass assessment in the       MARM, 2008. Anuario de Estadísticas Forestales 2007
+  forest stands of Trentino. Studi Trent. Sci Nat, Acta Biol     [online]. Ministerio de Medio Ambiente y Medio Rural
+  81, 75-121.                                                    y Marino). Available in http://www.mma.es/portal/
+GADOW K.V., REAL P., ÁLVAREZ GONZÁLEZ J.G. (eds),                secciones/biodiversidad/montes_politica_forestal [15
+  2001. Modelización del crecimiento y la evolución de bos-      July, 2010].
+  ques. IUFRO, Vienna.                                         MOKANY K., RAISON R.J., PROKUSHKIN A.S., 2006.
+GOODALE C.L., APPS M.J., BIRDSEY R.A., FIELD C.B.,               Critical analysis of root:shoot ratios in terrestrial biomes.
+  HEATH L.S., HOUGHTON R.A., JENKINS J.C.,                       Glob Change Biol 12, 84-96.
+  KOHLMAIER G.H., KURZ W., LIU S.R., NABUURS                   MONTERO G., ORTEGA C., CAÑELLAS I., BACHILLER
+  G.J., NILSSON S., SHVIDENKO A.Z., 2002. Forest                 A., 1999. Productividad aérea y dinámica de nutrientes
+  carbon sinks in the Northern Hemisphere. Ecological            en una población de Pinus pinaster Ait. sometida a
+  Applications 12, 891-899.                                      distintos regímenes de claras. Invest Agrar: Sist Recur For
+GRUNZWEIG J.M., GELFAND I., FRIED Y., YAKIR D.,                  Fuera de Serie, 175-206.
+  2007. Biogeochemical factors contributing to enhanced        MONTERO G., RUIZ-PEINADO R., MUÑOZ M., 2005.
+  carbon storage following afforestation of a semi-arid          Producción de biomasa y fijación de CO2 por los bosques
+  shrubland. Biogeosciences 4, 891-904.                          españoles. Instituto Nacional de Investigación y Tecno-
+GUTIÉRREZ OLIVA A., PLAZA PULGAR F., 1967. Carac-                logía Agraria y Alimentaria, Ministerio de Educación y
+  terísticas físico-mecánicas de las maderas españolas.          Ciencia, Madrid. 270 pp.
+  Ministerio de Agricultura, Madrid. 103 pp.                   MONTES N., BERTAUDIERE-MONTES V., BADRI W.,
+IPCC, 2003. Good practice guidance for land use, land-use        ZAOUI E.H., GAUQUELIN T., 2002. Biomass and nu-
+  change and forestry. Institute for Global Environmental        trient content of a semi-arid mountain ecosystem: the
+  Strategies, Kanagawa, Japan.                                   Juniperus thurifera L. woodland fo Azzaden Valley (Mo-
+KETTERINGS Q.M., COE R., VAN NOORDWIJK V.,                       rocco). For Ecol Manage 166, 35-43.
+  AMBAGAU Y., PALM C.A., 2001. Reducing uncertainty            MONTES N., GAUQUELIN T., BADRI W., BERTAUDIERE
+  in the use of allometric biomass equations for predicting      V., ZAOUI E.H., 2000. A non-destructive method for esti-
+  above-ground tree biomass in mixed secondary forests.          mating aboveground forest biomass in threatened wood-
+  For Ecol Manage 146, 199-209.                                  lands. For Ecol Manage 130, 37-46.
+KOZAK A., 1970. Methods for ensuring additivity of bio-        MUUKKONEN P., 2007. Generalized allometric volume and
+  mass components by regression analysis. Forestry Chro-         biomass equations for some tree species in Europe. Eur J
+  nicle 46, 402-404.                                             Forest Res 126, 157-166.
+KURZ W., BEUKEMA S., APPS M., 1996. Estimation                 MYERS R.H., 1990. Classical and modern regression with
+  of root biomass and dynamics for the carbon budget mo-         applications. Duxbury Press Belmont, Calif. 488 pp.
+188                         R. Ruiz-Peinado et al. / Forest Systems (2011) 20(1), 176-188
+
+
+NÁVAR J., 2009. Allometric equations for tree species and     SAS INSTITUTE INC, 2004. SAS/ETS(R) 9.1 User’s guide.
+  carbon stocks for forests of northwestern Mexico. For         In SAS Institute Inc, Cary, NC.
+  Ecol Manage. 257, 427-434.                                  SCARASCIA-MUGNOZZA G., OSWALD H., PIUSSI P.,
+NEIRYNCK J., MADDELEIN D., KEERSMAEKER L.D.,                    RADOGLOU K., 2000. Forests of the Mediterranean
+  LUST N., MUYS B., 1998. Biomass and nutrient cycling          region: gaps in knowledge and research needs. For Ecol
+  of a highly productive Corsican pine stand on former          Manage 132, 97-109.
+  heathland in northern Belgium. Ann For Sci 55, 389-405.     SCHLAMADINGER B., MARLAND G., 1996. The role of
+PARDÉ J., 1980. Forest biomass. Forestry Abstracts 41,          forest and bioenergy strategies in the global carbon cycle.
+  343-363.                                                      Biomass & Bioenergy 10, 275-300.
+PARRESOL B.R., 1999. Assessing tree and stand biomass:        SCHROEDER P.E., BROWN S., MO J., BIRDSEY R.A.,
+  a review with examples and critical comparisons. For Sci      CIESZEWSKI C., 1997. Biomass estimation for tempe-
+  45, 573-593.                                                  rate broadleaf forest of the United States using inventory
+PARRESOL B.R., 2001. Additivity of nonlinear biomass            data. For Sci 43, 424-434.
+  equations. Can J For Res 31, 865-878.                       WIRTH C., SCHUMACHER J., SCHULZE E.D., 2004.
+PASTOR J., ABER J.D., MELILLO J.M., 1983/1984. Biomass          Generic biomass functions for Norway spruce in Cen-
+  prediction using generalized allometric regressions for       tral Europe - a meta-analysis approach toward pre-
+  some northeast tree species. For Ecol Manage 7, 265-274.      diction and uncertainty estimation. Tree Physiol 24,
+PORTE A., TRICHET P., BERT D., LOUSTAU D., 2002.                121-139.
+  Allometric relationships for branch and tree woody bio-     ZELLNER A., 1962. An eff icient method of estimating
+  mass of Maritime pine (Pinus pinaster Ait.). For Ecol Ma-     seemingly unrelated regressions and tests for aggregation
+  nage 158, 71-83.                                              bias. J Am Stat Assoc, 348-368.
+

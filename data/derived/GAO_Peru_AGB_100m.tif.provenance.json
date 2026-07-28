@@ -1,0 +1,14 @@
+{
+  "output": "data/derived/GAO_Peru_AGB_100m.tif",
+  "source": "data/gao-peru-carbon/peru_acd.tif",
+  "source_sha256": "91c7bc001389fca818dcfe6d28af35c0431abe70b52abebb25e2980ef46c59a1",
+  "source_mtime": 1785143930.8337595,
+  "transform": "AGB = ACD / carbon_fraction (carbon->biomass)",
+  "carbon_fraction": 0.48,
+  "carbon_fraction_ref": "Asner & Mascaro 2014 (tropical 0.48)",
+  "n_valid_px": 128563660,
+  "agb_min": 0.00038052487070672214,
+  "agb_max": 360.8508605957031,
+  "agb_mean_mg_ha": 112.17456347315753,
+  "nodata": -9999.0
+}

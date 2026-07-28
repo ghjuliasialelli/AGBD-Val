@@ -1,0 +1,683 @@
+Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria (INIA)                     Forest Systems 2012 21(1): 42-52
+Available online at www.inia.es/forestsystems                                                                     ISSN: 2171-5068
+doi: http://dx.doi.org/10.5424/fs/2112211-02193                                                                 eISSN: 2171-9845
+
+
+
+
+Biomass models to estimate carbon stocks for hardwood tree species
+                                     R. Ruiz-Peinado1, 2*, G. Montero1, 2, M. del Rio1, 2
+                         1
+                           Departamento de Selvicultura y Gestión de Sistemas Forestales, INIA-CIFOR,
+                                          Ctra. A Coruña, km 7.5. 28040. Madrid. Spain
+                    2
+                      Instituto Universitario en Gestión Forestal Sostenible. Universidad de Valladolid-INIA
+
+
+Abstract
+   To estimate forest carbon pools from forest inventories it is necessary to have biomass models or biomass
+expansion factors. In this study, tree biomass models were developed for the main hardwood forest species in
+Spain: Alnus glutinosa, Castanea sativa, Ceratonia siliqua, Eucalyptus globulus, Fagus sylvatica, Fraxinus an-
+gustifolia, Olea europaea var. sylvestris, Populus x euramericana, Quercus canariensis, Quercus faginea, Quercus
+ilex, Quercus pyrenaica and Quercus suber. Different tree biomass components were considered: stem with bark,
+branches of different sizes, above and belowground biomass. For each species, a system of equations was fitted
+using seemingly unrelated regression, fulfilling the additivity property between biomass components. Diameter
+and total height were explored as independent variables. All models included tree diameter whereas for the major-
+ity of species, total height was only considered in the stem biomass models and in some of the branch models.
+The comparison of the new biomass models with previous models fitted separately for each tree component indi-
+cated an improvement in the accuracy of the models. A mean reduction of 20% in the root mean square error and
+a mean increase in the model efficiency of 7% in comparison with recently published models. So, the fitted mod-
+els allow estimating more accurately the biomass stock in hardwood species from the Spanish National Forest
+Inventory data.
+   Key words: aboveground biomass; belowground biomass; additivity; carbon sequestration; hardwood species;
+biomass models.
+
+Resumen
+Ecuaciones para la estimación de biomasa de frondosas en España
+   Para realizar estimaciones de cantidades de carbono acumulado por los bosques, a partir de datos procedentes de
+inventarios forestales, es necesario disponer de modelos de estimación de biomasa o de factores de expansión. En este
+trabajo se han ajustado modelos de estimación de biomasa para las principales especies forestales de frondosas exis-
+tentes en los bosques españoles: Alnus glutinosa, Castanea sativa, Ceratonia siliqua, Eucalyptus globulus, Fagus syl-
+vatica, Fraxinus angustifolia, Olea europea var. sylvestris, Populus x euramericana, Quercus canariensis, Quercus fa-
+ginea, Quercus ilex, Quercus pyrenaica y Quercus suber. Se han determinado las siguientes fracciones: fuste con cor-
+teza, ramas de diferentes tamaños, parte aérea y parte radical. Para cada especie se ajustó un sistema de ecuaciones
+utilizando la metodología de mínimos cuadrados generalizados conjuntos, que contempla el cumplimiento de la pro-
+piedad aditiva entre fracciones. Como variables independientes se utilizaron el diámetro y la altura total del árbol. El
+diámetro aparece en todos los modelos, no así la altura, si bien su inclusión resulta en una mejora de las estimaciones
+en los modelos de biomasa de fuste para la mayoría de las especies y en parte de los modelos de ramas. La comparación
+con otros modelos desarrollados anteriormente para estas especies y ajustados con otra metodología, indica una mejo-
+ra en la precisión de los aquí presentados. Existe una mejora media del 20% en términos de la raíz del error medio
+cuadrático y del 7% en la eficiencia del modelo. Así, mediante el uso de estos modelos ajustados se puede estimar con
+mayor precisión la biomasa y el carbono acumulado por estas especies de frondosas a partir de datos del Inventario
+Forestal Nacional de España.
+   Palabras clave: biomasa aérea; biomasa radical; fijación de carbono; aditividad; frondosas; modelos de estimación
+de biomasa.
+
+
+
+* Corresponding author. ruizpein@inia.es
+Received: 26-09-11. Accepted: 13-12-11
+                                     Biomass models for hardwood species in Spain                                     43
+
+
+Introduction                                                     Montero et al. (2005) developed biomass models for
+                                                              thirty two forest species in Spain in order to quantify
+    In recent years, the estimation of forest carbon stocks   the carbon stocks and the potential of Spanish forests
+has gained prominence due to the role of forests in the       as carbon sinks. These are allometric models for the
+mitigation of global climate change through carbon stor-      different tree components (stem, branches of different
+age in biomass and soil. In the Mediterranean area, this      diameters, needles or leaves and root system), which
+role is particularly significant given that non-marketable    use diameter at the breast height as an independent
+products and services provided by forests are usually of      variable. These models were modified for softwood
+greater value than their direct productions. Therefore,       species by Ruiz-Peinado et al. (2011) since they did
+forest managers require accurate tools for estimating         not fulfill the additivity property (which is highly desir-
+carbon stocks in order to incorporate this aspect into        able in this type of model) between tree components
+forest management and planning. Carbon estimation is          (Cunia and Briggs, 1984; Parresol, 1999). Besides
+usually carried out using ‘indirect’ methods which rely       diameter, these new equations included total height as
+on forest inventories because direct estimation ap-           an independent variable in order to do more applicabil-
+proaches are both complex and costly. Hence, biomass          ity to the models. In this study, we present new biomass
+models which relate different tree biomass components         models for hardwood species with higher surface dis-
+to dendrometrical variables and biomass expansion fac-        tribution and ecological importance in Spain in order
+tors which relate biomass to stand volume are particu-        to improve the estimations provided by the previous
+larly useful tools in forest biomass estimation (Brown,       models proposed by Montero et al. (2005). As in the
+2002; Somogyi et al., 2007). Biomass models require           case of the models for softwood species (Ruiz-Peinado
+tree-level data, which are usually recorded in forest in-     et al., 2011), we used methods that guarantee the ad-
+ventories, such as diameter and sometimes height (Teo-        ditivity of the tree biomass fractions and we explored
+baldelli et al., 2009). Since biomass expansion factors       the inclusion of tree height as an additional predictor
+could depend on site (Wirth et al., 2004), age (Lehtonen      variable.
+et al., 2004) or stand timber volume (Fang et al., 2001),
+if tree-level data is available biomass models are often
+preferred.                                                    Material and methods
+    In Spain, stands dominated by hardwood species ac-
+count for over 46% of the forested area (8.6 million ha),     Study area
+while this percentage rises to 65% (12.2 million ha) if
+mixed stands are included in the statistic (MARM,                The biomass data used for fitting the models were
+2010). Biomass production has been amply studied in           collected in representative regions across the natural
+several of these hardwood species such as Fagus syl-          distribution areas of these hardwood species in Spain
+vatica (Santa Regina et al., 1997) given their extensive      or from areas where these species are cultivated, select-
+distribution and importance in wood production. More          ing trees within the pure stands. The location of the
+recently, such studies have been undertaken in planta-        sampling sites is presented in Figure 1. Tree data for
+tions of Eucalyptus (Merino et al., 2005; Pérez-Cruzado       Alnus glutinosa (L.) Gaertn. were collected in the
+et al., 2011) or hybrids of the genus Populus (Sixto-         Pyrenean Mountain Range; for Castanea sativa Mill.
+Blanco et al., 2007) due to their importance in bio-en-       in the Central Mountain Range and Sierra de Ronda;
+ergy production. As regards Quercus species, Q. ilex has      for Ceratonia siliqua L. in Sierra de las Nieves; Euca-
+also been studied due to its wide distribution in the         lyptus globulus Labill. was sampled in the south of
+Mediterranean area (Canadell et al., 1988; Rapp et al.,       Huelva province; Fagus sylvatica L. in the Cantabric
+1999); Q. pyrenaica for its firewood production (Car-         Mountain Range and the Pyrenean Mountain Range;
+valho and Parresol, 2003) and Q. robur (Balboa-Murias         Fraxinus angustifolia Vahl. in the Pyrenean Mountain
+et al., 2006b) because of its ecological importance.          Range and in Los Alcornocales Natural Park; Olea
+However, other Quercus species, such as Q. canariensis,       europaea L. var. sylvestris Brot. in the south of Cadiz
+Q. faginea and Q. suber have been poorly studied despite      province; Populus x euramericana (Dode) Guinier in
+their great ecological and economic importance too. A         the Duero valley in Soria, Segovia and Salamanca
+compilation of the literature for biomass estimation in       provinces (central Spain); Quercus canariensis Willd.
+Spain was done in Bravo et al. (2011).                        in Los Alcornocales Natural Park; Quercus faginea
+44                                  R. Ruiz-Peinado et al. / Forest Systems (2012) 21(1): 42-52
+
+
+                                                                         which displayed normal development and average
+                                                                         growing conditions. Diameter at breast height (1.30 m),
+                                                                         total height and crown height were measured directly
+                                                                         on each tree. Trees were sampled in 5 cm diameter
+                                                                         classes, starting at 5 cm up to the maximum diameter
+                                                                         found in the area, sampling at least three trees in each
+                                                                         diameter classes when it was possible. For Q. pyrena-
+                                                                         ica the sample was completed with available trees from
+                                                                         other studies carried out in the CIFOR-INIA. The
+                                                                         number of sampled trees varied from a minimum of
+                                                                         16 in the case of A. glutinosa to a maximum of 183 trees
+                                                                         for Q. pyrenaica. A breakdown of the data is shown in
+Figure 1. Location of the sample zones in Spain for the studied          Table 1.
+species. Ag: Alnus glutinosa; Cas: Castanea sativa; Ces: Ceratonia          Sampled trees were felled, separated into biomass
+siliqua; Eg: Eucalyptus globulus; Fs: Fagus sylvatica; Fr: Fraxinus      components and weighed in the field in order to obtain
+angustifolia; Oe: Olea europaea var. sylvestris; Pxe: Populus x          the fresh weight. Thicker stems were measured every
+euramericana; Qc: Quercus canariensis; Qf: Quercus faginea;
+                                                                         meter and their volume calculated using the Smalian
+Qi: Quercus ilex; Qp: Quercus pyrenaica; Qs: Quercus suber.
+                                                                         formulation and then basic density of wood was applied
+                                                                         in order to convert volume into dry mass. Methods for
+Lamk. in Guadalajara province (Central Spain); Quer-                     estimating the weight of the biomass per fraction of the
+cus ilex L. in Extremadura region and Madrid region;                     tree in the field and in the laboratory were the same
+Quercus pyrenaica Willd. in Extremadura region, Can-                     that those described in Ruiz-Peinado et al. (2011). In
+tabric Mountain Range and Central Mountain Range;                        accordance with the methodology described in Monte-
+Quercus suber L. in Los Alcornocales Natural Park and                    ro et al. (1999) we considered the following biomass
+Sierra de San Pedro.                                                     components: stem with bark (commercial volume, up
+                                                                         to a top diameter of 7 cm), thick branches (diameter
+                                                                         greater than 7 cm), medium branches (diameter be-
+Data sampling                                                            tween 2 and 7 cm), thin branches (diameter smaller
+                                                                         than 2 cm) and leaves. For some deciduous species
+   Individual trees were selected at medium quality                      (C. sativa, F. sylvatica, F. angustifolia and Q. pyre­
+sites (stands of medium site index) and those chosen                     naica) biomass data were collected in autumn and
+for the destructive sample were taken from among those                   winter when leaves were not present on the trees so this
+
+Table 1. Minimum, maximum and mean values for diameter, height and biomass weight for the sample trees of the studied species
+                               Diameter (cm)                Height (m)       Aboveground Biomass (kg)          Root Biomass (kg)
+         Species
+                             Min     Max Mean        Min      Max Mean        n     Min   Max Mean       n        Min    Max Mean
+Alnus glutinosa               8.3    47.3   26.8      2.8      16.7   10.6     16   13      625   266      5       13      572   247
+Castanea sativa*             10.7    50.6   27.3      5.8      14.7    9.5    24    72    2,080   689    11        27    1,478   578
+Ceratonia siliqua            10.2    42.9   19.0      5.3      12.9    7.3     19   24      599   157      7       33      346   130
+Eucalyptus globulus           9.8    54.0   28.6      7.7      25.0   16.8    24    40    1,591   530     –        –         –    –
+Fagus sylvatica*              9.5    74.8   35.1      9.0      30.9   19.8    72    31    3,899   974    14          8   1,134   311
+Fraxinus angustifolia*        7.2    52.2   24.9      2.8      10.0    6.2    26    18    1,278   358     8        34    1,289   466
+Olea europaea                10.0    40.5   21.3      4.9      11.0    7.6    17    25      426   171     5        17      222    63
+Populus x euramericana       11.4    50.7   28.0      9.6      31.1   19.1    32    28    1,331   380     8          7     309    90
+Quercus canariensis          10.0    60.0   29.5      7.5      19.5   13.6    23    22    1,070   404     6        12      452   214
+Quercus faginea               9.5    46.5   24.8      4.9      14.7    8.5    24    15      584   212     8        12      479   147
+Quercus ilex                  7.8    85.9   40.9      3.9      12.5    7.5    43    13    2,506   920    11       101    1,957   570
+Quercus pyrenaica*            5.0    38.2   13.6      4.7      18.1   10.3   183     7      814   100    13        11      789   308
+Quercus suber                10.5    83.0   36.5      3.5      14.0    8.7    33    11    2,412   512    11          7     464   160
+Min: minimum; Max: maximum; Mean: mean; n: number of samples; *: Aboveground biomass does not include the leaves component.
+                                   Biomass models for hardwood species in Spain                                 45
+
+
+fraction was excluded from the analysis. Estimation of     MEF ratios (Bi et al., 2004) (for more details regarding
+root biomass was only undertaken on a few trees per        methodology see Ruiz-Peinado et al., 2011).
+species and diameter class due to the complexity and          Since belowground biomass is closely correlated
+cost of the work involved, so one tree per diameter        with aboveground biomass for allometric reasons (Kurz
+class were selected to root biomass estimation. The fact   et al., 1996), determining the partitioning of biomass
+that E. globulus is managed as a coppice system fol-       could be useful to apply in other studies or models. In
+lowing the first harvest meant that the estimation of      this way, the root:shoot ratios were calculated as the
+belowground biomass was difficult due to the differing     dry mass relationship between the belowground and
+ages of the root systems found on the samples. There-      aboveground biomass of a tree. A Tukey’s honest sig-
+fore, this fraction was excluded for this species.         nificance test was applied in order to identify differ-
+   Thus, the original database from Montero et al.         ences between the specific mean values (α = 0.05;
+(2005) was updated and increased for some species in       p < 0.001).
+order to obtain a more widespread sampling along the
+diameter classes. Nevertheless, some cases the sample
+could not be completed due to protection status of the     Results
+species for cut the tree and remove the radical systems.
+                                                               Maximum aboveground biomass for the sampled
+                                                           hardwood species ranged from 426 kg for O. europaea
+Statistical analysis                                       to 3,899 kg for F. sylvatica and maximum belowground
+                                                           biomass ranged from 222 kg (O. europaea) to 1,957 kg
+    The methodology used to fit the models for tree        (Q. ilex) (Table 1). The models selected through the
+biomass components was the same as that described          SUR procedure and statistics for bias and precision
+by Ruiz-Peinado et al. (2011). Fitting was performed       (MRES, RMSE and MEF) are shown in Table 2, all
+in two steps. In a first step, we tested different equa-   parameters being significant at the 95% confidence
+tions used in the literature and chose the best model      level.
+according to the goodness of fit statistics: Mean Re-          All the stem biomass models for the studied spe-
+siduals (MRES), Root Mean Square Error (RMSE),             cies included diameter and total height as independent
+Model Efficiency (MEF) and Akaike Information Cri-         variables, except for C. siliqua, Q. ilex and Q. faginea
+terion (AIC). Also we draw the models to evaluate the      which only presented diameter. Diameter was also
+biological behaviour. A system of equations was then       included in all the models for the other biomass frac-
+fitted using the best models selected for the different    tions, but the inclusion of total height was restricted
+biomass components through seemingly unrelated re-         to the branch fraction and only for some of the spe-
+gressions (SUR) in order to observe the additive prop-     cies (Table 2).
+erty between biomass components (Parresol, 1999;               The highest model efficiency was obtained by the
+2001) and weighted regression to avoid heterocedastic-     stem biomass model for each species, exceeding a value
+ity. Belowground biomass models were fitted independ-      of 0.82 in all cases. Even so, most of the models of
+ently since there were fewer samples for this fraction     branches and belowground biomass presented effi-
+than for aboveground biomass due to the laborious and      ciency values of over 0.7. As can be seen from the
+time-consuming nature of the work involved. The mod-       predicted versus the observed values for aboveground
+els were fitted using the SAS/ETS proc MODEL pro-          biomass in Figure 2, there is no evidence of bias in the
+cedure (SAS Institute Inc., 2004). Multicollinearity was   fitted models.
+also tested using the condition number. Due to prob-           The thick branch component was absent in smaller
+lems of multicollinearity it was not possible to fit an    trees and this fraction only appears when trees reach a
+individual model for the foliage component of any of       certain size. Therefore, most of the models for thick
+the species. Hence, where present, this fraction was       branch biomass presented a restriction based on a
+included in the thin branch component. Also, when one      threshold diameter, which varied from 12.5 cm for
+biomass component presented problems for model fit-        C. sativa, F. angustifolia and Q. ilex to 22.5 cm for
+ting, it was included with the next size component.        F. sylvatica and P. x euramericana. In other cases, such
+    The models obtained were compared to those pre-        as for A. glutinosa, the sample size was so limited (due
+sented in Montero et al. (2005) through the RMSE and       to the small number of thick branches) that this com-
+46                              R. Ruiz-Peinado et al. / Forest Systems (2012) 21(1): 42-52
+
+
+Table 2. Biomass models selected from seemingly unrelated regressions and fitting statistics for the hardwood species
+studied
+           Species / components                                         Model                          MRES RMSE        MEF
+Alnus glutinosa
+Stem                                       Ws = 0.0191 · d2 · h                                         6.01    56.40   0.87
+Thick + Medium branches                    Wb7 + Wb27 = 0.0512 · d2                                     0.76    22.33   0.78
+Thin branches + leaves                     Wb2 + l = 0.0567 · d · h                                     0.35     6.69   0.72
+Roots                                      Wr = 0.214 · d2                                             11.63    58.89   0.92
+Castanea sativa
+Stem                                       Ws = 0.0142 · d2 · h                                        12.14    39.29   0.91
+Thick branches                             If d ≤ 12.5 cm then Z = 0; If d > 12.5 cm then Z = 1;        1.90    27.31   0.92
+                                           Wb7 = [0.223 · (d – 12.5)2] · Z
+Medium branches                            Wb2–7 = 0.230 · d · h                                        4.16    36.54   0.63
+Thin branches                              Wb2 = 0.221 · d · h                                          4.11    26.48   0.70
+Roots                                      Wr = 0.0211 · d2.804                                        21.36    99.45   0.97
+Ceratonia siliqua
+Stem                                       Ws = 0.142 · d1.974                                          0.43     9.41   0.97
+Thick branches                             Wb7 = 0.104 · d2                                            –0.44    28.91   0.77
+Medium branches                            Wb2–7 = 0.0538 · d2                                         –0.19    11.61   0.75
+Thin branches + leaves                     Wb2 + l = 0.151 · d2 – 0.00740 · d2 · h                      0.33    12.88   0.76
+Roots                                      Wr = 0.335 · d2                                             48.84    10.41   0.97
+Eucalyptus globulus
+Stem + Thick branches                      Ws + b7 = 0.0221 · d2 · h                                   –2.90    69.70   0.97
+Medium branches                            Wb2–7 = 0.154 · d1.668                                      –0.83    14.23   0.86
+Thin branches + leaves                     Wb2 + l = 0.180 · (d2 · h)0.587                             –0.32    17.14   0.83
+Fagus sylvatica
+Stem                                       Ws = 0.0676 · d2 + 0.0182 · d2 · h                         –14.50   157.05   0.94
+Thick branches                             If d ≤ 22.5 cm then Z = 0; If d > 22.5 cm then Z = 1;       12.14   100.79   0.65
+                                           Wb7 = [0.830 · (d – 22.5)2 – 0.0248 · (d – 22.5)2 · h] · Z
+Medium branches                            Wb2–7 = 0.0792 · d2                                          2.97    47.83   0.83
+Thin branches                              Wb2 = 0.0930 · d2 – 0.00226 · d2 · h                         0.28    24.88   0.80
+Roots                                      Wr = 0.106 · d2                                             68.21   193.32   0.63
+Fraxinus angustifolia
+Stem                                       Ws = 0.0296 · d2 · h                                         6.19    37.57   0.93
+Thick branches                             If d ≤ 12.5 cm then Z = 0; If d > 12.5 cm then Z = 1;        1.91    26.61   0.92
+                                           Wb7 = [0.231 · (d – 12.5)2] · Z
+Medium branches                            Wb2–7 = 0.0925 · d2                                          1.67    15.79   0.94
+Thin branches                              Wb2 = 2.005 · d                                              4.81    24.33   0.55
+Roots                                      Wr = 0.359 · d2                                             23.79   198.70   0.81
+Olea europaea var. sylvestris
+Stem                                       Ws = 0.0114 · d2 · h                                         4.40    18.10   0.82
+Thick branches                             Wb7 = 0.0108 · d2 · h                                        3.02    20.70   0.84
+Medium branches                            Wb2–7 = 1.672 · d                                            0.25    17.58   0.54
+Thin branches + leaves                     Wb2 + l = 0.0354 · d2 + 1.187 · h                            1.37    12.72   0.65
+Roots                                      Wr = 0.147 · d2                                              3.21    23.81   0.93
+Populus x euramericana
+Stem                                       Ws = 0.0130 · d2 · h                                         0.72    16.44   0.99
+Thick branches                             If d ≤ 22.5 cm then Z = 0; If d > 22.5 cm then Z = 1;        2.96    24.23   0.83
+                                           Wb7 = [0.538 · (d – 22.5)2– 0.0130 · (d – 22.5)2 · h] · Z
+Medium branches                            Wb2–7 = 0.0385 · d2                                          1.32    19.96   0.77
+Thin branches + leaves                     Wb2 + l = 0.0774 · d2 – 0.00198 · d2 · h                     2.79    19.40   0.66
+Roots                                      Wr = 0.122 · d2                                              1.39    44.80   0.82
+                                        Biomass models for hardwood species in Spain                                              47
+
+
+Table 2 (cont.). Biomass models selected from seemingly unrelated regressions and fitting statistics for the hardwood
+species studied
+          Species / components                                         Model                              MRES RMSE          MEF
+Quercus canariensis
+Stem                                          Ws = 0.0126 · d2 · h                                        –2.49      61.86    0.82
+Thick branches                                Wb7 = 0.103 · d2                                            26.72     100.06    0.54
+Medium branches + Thin branches + leaves      Wb2–7 + Wb2 + l = 0.167 · d · h                             24.77      35.30    0.63
+Roots                                         Wr = 0.135 · d2                                             10.69      96.76    0.79
+Quercus faginea
+Stem                                          Ws = 0.154 · d2                                              1.08      20.98    0.93
+Thick branches                                Wb7 = 0.0861 · d2                                           –7.67      32.84    0.76
+Medium branches                               Wb2–7 = 0.127 · d2 – 0.00598 · d2 · h                       –4.21      11.04    0.89
+Thin branches + leaves                        Wb2 + l = 0.0726 · d2 – 0.00275 · d2 · h                    –0.09       9.53    0.80
+Roots                                         Wr = 0.169 · d2                                             –3.20      59.61    0.86
+Quercus ilex
+Stem                                          Ws = 0.143 · d2                                              1.18      47.18    0.92
+Thick branches                                If d ≤ 12.5 cm then Z = 0; If d > 12.5 cm then Z = 1;       48.21     288.70    0.80
+                                              Wb7 = [0.0684 · (d – 12.5)2 · h] · Z
+Medium branches                               Wb2–7 = 0.0898 · d2                                          9.87      96.46    0.50
+Thin branches + leaves                        Wb2 + l = 0.0824 · d2                                        8.31      67.35    0.70
+Roots                                         Wr = 0.254 · d2                                            –15.86     351.04    0.66
+Quercus pyrenaica
+Stem + Thick branches                         Ws + Wb7 = 0.0261 · d2 · h                                  18.21      26.90    0.94
+Medium branches                               Wb2–7 = –0.0260 · d2 + 0.536 · h + 0.00538 · d2 · h         –0.41       8.60    0.78
+Thin branches                                 Wb2 = 0.898 · d – 0.445 · h                                 –0.23       3.24    0.71
+Roots                                         Wr = 0.143 · d2                                             –1.21      76.08    0.90
+Quercus suber
+Stem                                          Ws = 0.00525 · d2 · h + 0.278 · d · h                       11.60      66.87    0.88
+Thick branches                                Wb7 = 0.0135 · d2 · h                                       38.08     110.76    0.87
+Medium branches                               Wb2–7 = 0.127 · d · h                                        6.56      26.47    0.61
+Thin branches + leaves                        Wb2 + l = 0.0463 · d · h                                     1.13       8.55    0.68
+Roots                                         Wr = 0.0829 · d2                                            –0.04      35.39    0.95
+Ws: Biomass weight of the stem fraction (kg); Wb7: Biomass weight of the thick branches fraction (diameter larger than 7 cm) (kg);
+Wb2–7: Biomass weight of medium branches fraction (diameter between 2 and 7 cm) (kg); Wb2 + l: Biomass weight of thin branches frac-
+tion (diameter smaller than 2 cm) with leaves (kg); Wr: Biomass weight of the belowground fraction (kg); d: diameter at breast height
+(cm); h: tree height (m); MRES: mean residuals; RMSE: root mean square error; MEF: model efficiency.
+
+ponent was incorporated into the medium branch frac-                 a mean RMSE reduction of 20% and a mean MEF
+tion. In the case of E. globulus and Q. pyrenaica, the               increase of 7% for aboveground biomass. As regards
+thick branch component was so limited that it was in-                the different fractions, the greatest improvements in
+cluded as part of the stem fraction since both these                 performance were for thick branches and thin branch-
+fractions, when harvested, are destined for the produc-              es, although for some species the efficiency of the
+tion of either paper pulp or firewood. The model effi-               stem biomass equation increased by more than 25%.
+ciency for belowground biomass equations reached a                   With regard to species, the models showing the great-
+value of 0.8 although the figure fell short of 0.7 for               est improvement were those for A. glutinosa, Q. ca-
+F. sylvatica and Q. ilex.                                            nariensis and Q. suber.
+   The RMSE and MEF ratios calculated to compare                        The partitioning of tree biomass into basic fractions
+the fitted models with those proposed by Montero                     as stem, crown (branches of different sizes and foliage
+et al. (2005) indicated improved performance for all                 when it was present) and belowground biomass is
+species using the new models. All the RMSE ratios                    shown in Figure 3. This partitioning is done using the
+were lower than 1 and the MEF ratios higher than                     models fitted in this study for a mean tree with a diam-
+1 for most of the fractions and species (Table 3), with              eter of 35 cm and height calculated from the sample
+48                                                        R. Ruiz-Peinado et al. / Forest Systems (2012) 21(1): 42-52
+
+                                        Alnus glutinosa                                                  Castanea sativa                                                              Ceratonia siliqua
+                 600
+
+
+
+
+                                                                                                                                             observed
+     observed
+
+
+
+
+                                                                          observed
+                                                                                                                                                         400
+                 300                                                                 1,000
+                                                                                                                                                         100
+                   0                                                                    0
+                        0       100     200     300 400     500     600                      0         500       1,000      1,500                                          100     200      300 400          500        600
+                                              predicted                                                        predicted                                                                    predicted
+
+                                      Eucalyptus globulus                                                Fagus sylvatica                                                         Fraxinus angustifolia
+                                                                                     4,000                                                              1,200
+     observed
+
+
+
+
+                                                                          observed
+
+
+
+
+                                                                                                                                             observed
+                1,000
+                                                                                     2,000                                                               600
+
+                   0                                                                    0                                                                     0
+                            0          500       1,000      1,500                                0    1,000     2,000 3,000         4,000                         0         200       400    600 800 1,000 1,200
+                                              predicted                                                        predicted                                                                    predicted
+
+                                        Olea europaea                                                Populus x euramericana                                                      Quercus canariensis
+                                                                                                                                                        1,000
+     observed
+
+
+
+
+                                                                          observed
+
+
+
+
+                                                                                                                                             observed
+                 300
+                                                                                      600                                                                400
+                 100
+                                                                                        0                                                                     0
+                                 100         200      300     400                            0       200 400 600 800 1,000 1,200                                  0          200        400 600          800        1,000
+                                              predicted                                                     predicted                                                                     predicted
+
+                                       Quercus faginea                                                       Quercus ilex                                                         Quercus pyrenaica
+                 600                                                                 2,500                                                               800
+     observed
+
+
+
+
+                                                                                                                                             observed
+                                                                          observed
+
+
+
+
+                 300                                                                 1,000                                                               400
+
+                   0                                                                    0                                                                     0
+                                100 200 300 400 500 600 700                                  0       500 1,000 1,500 2,000 2,500 3,000                            0               200         400        600              800
+                                         predicted                                                           predicted                                                                      predicted
+
+                                        Quercus suber
+                2,500
+     observed
+
+
+
+
+                1,000
+                   0
+                            0     500        1,000 1,500    2,000
+                                               predicted
+       Figure 2. Observed and predicted values for aboveground biomass (kg) of the hardwood studied species. The diagonal
+       line is displaying the 1:1 line.
+
+                                                                                                                    100%
+data. The stem was the biggest fraction in the case                                                                  90%
+of Q. pyrenaica (65%, but for this species including                                                                 80%
+the thick branches component), F. sylvatica (62%) and                                                                70%
+                                                                                                                     60%
+P. x euramericana (56%) and the smallest fraction for                                                                50%
+C. siliqua (17%). The crown component was the larg-                                                                  40%
+
+est biomass fraction for some of these hardwood spe-                                                                 30%
+                                                                                                                     20%
+cies as Q. ilex and Q. suber with maximum values of                                                                  10%
+52% and 45% respectively, but also presented minimum                                                                  0%
+                                                                                                                            Ag      Cas     Ces          Fs           Fr         Oe     Pxe    Qc       Qf         Qi         Qp   Qs
+values of 13% in the case of A. glutinosa and 14% for
+                                                                                                                                               Stem    Branches/leaves    Root
+Q. pyrenaica, excluding this case the thick branch
+component. Root biomass importance varied between                                                                 Figure 3. Comparison of biomass partitioning between softwood
+species, from nearly half the total biomass to just a                                                             species for a mean tree with a dbh of 35 cm (mean height to this di-
+                                                                                                                  ameter was calculated from the original data). Ag: Alnus glutinosa;
+seventh. The maximum values for this fraction were                                                                Cas: Castanea sativa; Ces: Ceratonia siliqua; Fs: Fagus sylvatica;
+49% and 43% for C. sativa and F. angustifolia respec-                                                             Fr: Fraxinus angustifolia; Oe: Olea europaea var. sylvestris; Pxe:
+tively and the minimum values were 15% for F. syl-                                                                Populus x euramericana; Qc: Quercus canariensis; Qf: Quercus
+vatica and 20% for Q. suber.                                                                                      faginea; Qi: Quercus ilex; Qp: Quercus pyrenaica; Qs: Quercus suber.
+                                            Biomass models for hardwood species in Spain                                         49
+
+
+       Table 3. Root mean square error (RMSE) ratio and model efficiency (MEF) ratio to compare additive equations
+       fitted in this study and Montero et al. (2005) equations (fitted separately for each biomass component using log
+       transformed data)
+                                                         RMSE Ratio                                MEF Ratio
+                    Species
+                                            Wa      Ws      Wb7      Wb2–7   Wb2 + l   Wa     Ws      Wb7      Wb2–7   Wb2 + l
+       Alnus glutinosa                      0.86    0.68        0.92        0.72       1.05   1.19        1.05        1.55
+       Castanea sativa                      0.85    0.79    0.90    0.86    0.98       1.05   1.06    1.02    1.26    1.02
+       Ceratonia siliqua                    0.88    0.95    0.69    0.99    0.81       1.04   1.00    1.48    1.01    1.18
+       Eucalyptus globulus                  0.63        0.86        0.94    0.99       1.00       1.01        1.02    1.00
+       Fagus sylvatica                      0.93    0.90    0.86    0.94    0.68       1.01   1.02    1.23    1.03    1.42
+       Fraxinus angustifolia                0.59    0.79    0.77    0.46    0.66       1.06   1.05    1.07    1.32    1.93
+       Olea europaea                        0.82    0.99    0.60    0.86    0.93       1.07   1.01    1.55    1.45    1.09
+       Populus x euramericana               0.97    0.27    0.96    0.85    0.81       1.00   1.06    1.02    1.08    1.38
+       Quercus canariensis                  0.65    0.76    0.81        0.74           1.31   1.19    1.66        1.78
+       Quercus faginea                      0.87    0.88    0.99    0.72    0.76       1.02   1.02    1.01    1.12    1.20
+       Quercus ilex                         0.92    0.82    0.74    0.98    0.99       1.02   1.05    1.10    1.04    1.01
+       Quercus pyrenaica                    0.81        0.86        0.78    0.77       1.04       1.06        1.21    1.39
+       Quercus suber                        0.66    0.64    0.53    0.80    0.76       1.25   1.26    1.59    1.54    1.54
+       Wa: Aboveground fraction; Ws: Stem fraction; Wb7: Thick branches fraction (diameter larger than 7 cm); Wb2–7: Medium
+       branches fraction (diameter between 2 and 7 cm); Wb2 + l: Thin branches fraction (diameter smaller than 2 cm) with
+       leaves (when this component was present).
+
+
+   Mean values for the root:shoot relationships ranged                  C. sativa, with values above 0.75. O. europea and
+from a maximum of 0.812 for A. glutinosa to a mini-                     Q. faginea presented root:shoot ratios around 0.5 and
+mum of 0.163 for F. sylvatica. The mean value consid-                   the rest below 0.4.
+ered for the hardwood species studied is 0.466. The
+Tukey test revealed differences between the means of
+the root:shoot ratios for the studied species, establish-               Discussion
+ing groups with significantly different values (Table 4).
+Particularly notable were the high root:shoot ratios                       New biomass models fitted in this study for hard-
+found for A. glutinosa, C. siliqua, F. angustifolia and                 wood species improved the previous ones developed
+                                                                        by Montero et al. (2005) (Table 3), providing more
+Table 4. Root:shoot ratios for the studied species, standard            consistent and precise models to estimate biomass and
+error and multiple comparisons.                                         carbon stocks in Spanish forests, to use in nutrient
+                                                                        cycling studies (Montero et al., 1999; Blanco et al.,
+                                Root:                       Std.
+          Species                            Groups *                   2006), forest planning for bio-energy purposes (López-
+                              shoot ratio                  error
+                                                                        Rodríguez et al., 2009) or forest management to
+Alnus glutinosa                 0.812       a              0.1046
+Castanea sativa                 0.767       a b c          0.0729       maximize the carbon sink capacity of forests (Bravo
+Ceratonia siliqua               0.809       a              0.0944       et al., 2008; Cañellas et al., 2008).
+Eucalyptus globulus             0.771       a b            0.0792          The additivity property, which was not satisfied in
+Fagus sylvatica                 0.163                e     0.0164       previously developed equations, was assured through
+Fraxinus angustifolia           0.504          b c d       0.0995       the use of seemingly unrelated regression (SUR) to fit
+Olea europaea                   0.303              d e     0.0355
+                                                                        the systems of equations for each species. The applica-
+Populus x euramericana          0.363              d e     0.0855
+Quercus canariensis             0.490            c d       0.0428       tion of this fitting method and the inclusion of tree
+Quercus faginea                 0.357              d e     0.0497       height as a predictor variable resulted in a notable im-
+Quercus ilex                    0.323              d e     0.0207       provement in the performance of the biomass models,
+Quercus pyrenaica               0.353              d e     0.0342       particularly for some species, being the RMSE mean
+Hardwood                        0.466                      0.0266       reduction of a 20% and the MEF mean improvement
+*
+ Significant differences are shown by different letters (HSD test;      of an 18% (Table 3). Other models for Spanish forest
+α = 0.05; p < 0.001).                                                   species have also obtained good results using this meth-
+50                           R. Ruiz-Peinado et al. / Forest Systems (2012) 21(1): 42-52
+
+
+odology, such as the previously mentioned models            lowground biomass, hence the efficiency of the model
+developed by Ruiz-Peinado et al. (2011) for softwood        for this fraction is lower and, in addition, the number
+species (the accuracy of the estimations up to a 19%        of root biomass samples was quite limited for some
+improvement for aboveground biomass and 50% for             species, for these reasons more research about below-
+the thick branch component in some species), those of       ground biomass is needed to validate it.
+Balboa-Murias et al. (2006a; 2006b) for Pinus pinaster,        Biomass partitioning for the hardwood species
+P. radiata and Quercus robur in the north-west of           showed that only three species present stem values above
+Spain, or the models for Eucalyptus globulus and            50% (Fig. 3), including Q. pyrenaica (for which the thick
+E. nitens developed by Pérez-Cruzado et al. (2011).         branch component was included). In comparison with
+   Diameter and total height were generally recorded        the mean values for softwood species reported by Ruiz-
+in forest inventories and are well correlated with bio-     Peinado et al. (2011), hardwood species allocate a
+mass weight, being chosen as models independent             greater proportion of resources to crown and below-
+variables. The inclusion of height in the models im-        ground biomass than to the stem. Crown allocation
+proves the accuracy of biomass estimations (Bi et al.,      values vary depending on the species, but the mean
+2004; Joosten et al., 2004) and, hence, the models can      percentage is greater than for softwood species. Figure 3
+be applied in a wider range of stands since height pro-     also shows that Mediterranean species (Q. ilex, Q. suber,
+vides information on growth and site conditions (Wirth      O. europaea, C. siliqua and Q. canariensis) allocated
+et al., 2004). Also, other authors have proposed models     more biomass in crown (more than 35%) than Eurosi-
+which also include variables such as tree age (Saint-       berian species (A. glutinosa and F. sylvatica), being this
+Andre et al., 2005; Shaiek et al., 2011) or crown height    pattern also observed in softwood species from P. ha-
+(Loomis et al., 1966; Carvalho and Parresol, 2003) very     lepensis to P. uncinata (Ruiz-Peinado et al., 2011).
+useful for estimating crown biomass, but we discarded          The root:shoot ratios found for the hardwood species
+their inclusion because these variables are not usually     are in the same range as those reported by other au-
+measured neither in forest inventories nor in the Span-     thors. In the case of F. sylvatica (a value of 0.163 ac-
+ish National Forest Inventory.                              cording to the results of this study), Lebaube et al.
+   Most of the stem models included the combined            (2000) found a very similar value (0.15) in France. In
+variable of diameter and height (d2h), which improved       the same way, the value found for Q. ilex (0.357) is
+the precision of the estimations (Antonio et al., 2007).    similar to that reported by Canadell and Roda (1991)
+Also, this fraction obtained the highest model effi-        in Cataluña, north-east Spain (0.41). In other cases, the
+ciency using of the combined variable and having the        results vary slightly from those of other studies, such
+lowest degree of variability. Nevertheless, the inclusion   as in the case of poplar for which Federici et al. (2008)
+of tree height in the branch models did not always          reports a value of 0.21 in Italy. Mokany et al. (2006)
+improve the estimations and for this reason was only        presented root:shoot ratios according to vegetation
+present in a few cases. Also, in some branch models         categories, including oak forests where a value of 0.295
+the coefficients related to height were negative. This      was found. Although other authors, such as Cairns et al.
+may indicate that taller trees have a relatively reduced    (1997) and Mokany et al. (2006), did not find any dif-
+crown size because they are competing for light (Van-       ferences between groups of species (softwood and
+ninen and Mäkelä, 2000).                                    hardwood), where Spanish species are concerned the
+   Stem models showed a greater ability for predicting      difference between groups is substantial: a mean value
+biomass than models for the other components (they          of 0.466 for hardwoods (found in this study from
+explained more than 82% of the observed variation in        13 species in the Iberian peninsula) and a mean value
+all cases). Models for branch biomass presented a lower     of 0.265 for softwoods species found by Ruiz-Peinado
+predictive ability, probably due to the high variability    et al. (2011). The higher ratio in hardwoods might be
+observed in this component resulting from differences       explained by the recent history of broadleaf stands in
+in stand density and tree competition stage (Návar,         Spain, where these stands are typically managed as
+2009). Belowground biomass models only include              coppice systems to obtain firewood and charcoal. Fur-
+diameter as independent variable, as stated in other        thermore, these systems are favored by the recurrence
+studies (Drexhage and Colin, 2001; Tobin et al., 2007).     of forest fires. These factors combined with the effect
+Since most of the studied hardwood species are res-         of the Mediterranean climate (Canadell and Roda,
+prouters there is a greater degree of variability in be-    1991) result in deeper, larger root systems which are
+                                       Biomass models for hardwood species in Spain                                            51
+
+
+better adapted for nutrient storage. This occurs in many          Balboa-Murias M.A., Rojo A., Alvarez-Gonzalez J.G., Me-
+Quercus, F. angustifolia and C. sativa stands which                  rino A., 2006b. Carbon and nutrient stocks in mature Quer-
+display high root:shoot ratios.                                      cus robur L. stands in NW Spain. Ann For Sci 63: 557-565.
+   The different values found and those reported in the           Bi H.Q., Turner J., Lambert M.J., 2004. Additive biomass
+                                                                     equations for native eucalypt forest trees of temperate
+literature suggest that root:shoot ratios may not be
+                                                                     Australia. Trees-Struct Funct 18: 467-479.
+static relationships, but could depend on tree age (Peichl        Blanco J.A., Imbert J.B., Castillo F.J., 2006. Influence of site
+and Arain, 2007), type of species considered (hardwood-              characteristics and thinning intensity on litterfall produc-
+softwood) (Kurz et al., 1996) as reported in this study;             tion in two Pinus sylvestris L. forests in the western
+or abiotic factors (Cairns et al., 1997) and for these               Pyrenees. For Ecol Manage 237: 342-352.
+reasons more data for different sites and developed               Bravo F., Álvarez-González, J.G., Río, M., Barrio, M., Bonet,
+stages would be need to supplement values presented.                 J.A., Bravo-Oviedo, A., Calama, R., Castedo-Dorado, F.,
+                                                                     Crecente-Campo, F., Condes, S., Diéguez-Aranda, U.,
+                                                                     González-Martínez, S.C., Lizarralde, I., Nanos, N., Mad-
+                                                                     rigal, A., Martínez-Millán, F.J., Montero, G., Ordóñez, C.,
+Conclusions                                                          Palahi, M., Piqué, M., Rodriguez, F., Rodríguez-Soalleiro,
+                                                                     R., Rojo, A., Ruiz-Peinado, R., Sánchez-González, M.,
+   The new models presented in this study, which sat-                Trasobares, A., Vázquez-Piqué, J. 2011. Growth and yield
+isfy the additivity property as well as being consistent,            models in Spain: historical overview, contemporary exam-
+provide accurate tools for estimating biomass weight                 ples and perspectives. Forest Systems 20: 315-328.
+in hardwood species in Spain. The inclusion of total              Bravo F., Bravo-Oviedo A., Díaz Balteiro L., 2008. Carbon
+height in some of the models, which reflects growing                 sequestration in Spanish Mediterranean forest under two
+conditions, improves their accuracy and applicability.               management alternatives: a modeling approach. Eur J For
+   Belowground biomass was found to be one of the                    Res 127: 225-234.
+largest fractions in many of the hardwood species due             Brown S., 2002. Measuring carbon in forests: current status
+                                                                     and future challenges. Environ Pollut 116: 363-372.
+to its important role in resource storage. In comparison
+                                                                  Cairns M.A., Brown S., Helmer E.H., Baumgardner G.A.,
+to softwood species (in which the stem fraction is the
+                                                                     1997. Root biomass allocation in the world’s upland for-
+largest), hardwood species allocate a greater amount                 ests. Oecologia 111: 1-11.
+of biomass to the crown and belowground fractions.                Canadell J., Riba M., Andrés P., 1988. Biomass equations
+                                                                     for Quercus ilex L. in the Montseny Massif, northeastern
+                                                                     Spain. Forestry 61: 137-147.
+Acknowledgments                                                   Canadell J., Roda F., 1991. Root biomass of Quercus ilex in
+                                                                     a montane Mediterranean forest. Can J For Res 21: 1771-
+   We would like to thank all people who participated                1778.
+in the hard field work, especially M. Muñoz and E.                Cañellas I., Sánchez-González, M., Bogino, S.M., Adame,
+                                                                     P., Herrero, C., Roig, S., Tomé, M., Paulo, J.A., Bravo,
+Garriga. Also thanks to D. Sánchez de Ron to help with
+                                                                     F., 2008. Silviculture and carbon sequestration in Mediter-
+the figures and the two anonymous reviewers for their                ranean oak forests. In: Bravo F., LeMay V., Jandl R.,
+useful suggestions in order to improve the quality of                Gadow K.v. (Eds.), Managing Forest Ecosystems: The
+this paper. This study was partially financed by projects            Challenge of Climate Change. Springer, pp. 317-338.
+OT-03-002 and PSS-310000-2009-22.                                 Carvalho J.P., Parresol B.R., 2003. Additivity in tree biomass
+                                                                     components of Pyrenean oak (Quercus pyrenaica Willd.).
+                                                                     For Ecol Manage 179: 269-276.
+References                                                        Cunia T., Briggs R.D., 1984. Forcing additivity of biomass
+                                                                     tables: some empirical results. Can J For Res 14: 376-384.
+Antonio N., Tomé M., Tomé J., Soares P., Fontes L. 2007.          Drexhage M., Colin F., 2001. Estimating root system biomass
+  Effect of the tree, stand and site variables of the allometry      from breast-height diameters. Forestry 74: 491-497.
+  of Eucalyptus globulus tree biomass. Can J For Res 37:          Fang J.Y., Chen A.P., Peng C.H., Zhao S.Q., Ci L., 2001.
+  895-906.                                                           Changes in forest biomass carbon storage in China be-
+Balboa-Murias M.A., Rodriguez-Soalleiro R., Merino A.,               tween 1949 and 1998. Science 292: 2320-2322.
+  Alvarez-Gonzalez J.G., 2006a. Temporal variations and           Federici S., Vitullo M., Tulipano S., De Lauretis R., Seufert
+  distribution of carbon stocks in aboveground biomass of            G., 2008. An approach to estimate carbon stocks change
+  radiata pine and maritime pine pure stands under different         in forest carbon pools under the UNFCCC: the Italian
+  silvicultural alternatives. For Ecol Manage 237: 29-38.            case. iForest - Biogeosciences and Forestry 1: 86-95.
+52                              R. Ruiz-Peinado et al. / Forest Systems (2012) 21(1): 42-52
+
+
+Joosten R., Schumacher J., Wirth C., Schulte A., 2004. Eval-    Pérez-Cruzado C., Merino A., Rodríguez-Soalleiro R.,
+   uating tree carbon predictions for beech (Fagus sylvatica       2011. A management tool for estimating bioenergy
+   L.) in western Germany. For Ecol Manage 189: 87-96.             production and carbon sequestration in Eucalyptus
+Kurz W., Beukema S., Apps M. 1996. Estimation of root              globulus and Eucalyptus nitens grown as short rotation
+   biomass and dynamics for the carbon budget model of the         woody crops in north-west Spain. Biomass Bioenerg
+   Canadian forest sector. Can J For Res 26: 1973-1979.            35: 2839-2851.
+Lebaube S., Le Goff N., Ottorini J.M., Granier A., 2000.        Rapp M., Santa Regina I., Rico M., Gallego H.A., 1999.
+   Carbon balance and tree growth in a Fagus sylvatica             Biomass, nutrient content, litterfall and nutrient return to
+   stand. Ann For Sci 57: 49-61.                                   the soil in Mediterranean oak forests. For Ecol Manage
+Lehtonen A., Makipaa R., Heikkinen J., Sievanen R., Liski          119: 39-49.
+   J., 2004. Biomass expansion factors (BEFs) for Scots pine,   Ruiz-Peinado R., Río M., Montero G., 2011. New models
+   Norway spruce and birch according to stand age for bo-          for estimating the carbon sink capacity of Spanish soft-
+   real forests. For Ecol Manage 188: 211-224.                     wood species. Forest Systems 20: 176-188.
+Loomis R.M., Phares R.E., Crosby J.S., 1966. Estimating         Saint-Andre L., M’bou A.T., Mabiala A., Mouvondy W.,
+   foliage and branchwood quantities in Shortleaf Pine. For        Jourdan C., Roupsard O., Deleporte P., Hamel O., Nouvel-
+   Sci 12: 30-39.                                                  lon Y., 2005. Age-related equations for above- and below-
+López-Rodríguez F., Atanet C.P., Blázquez F.C., Celma A.R.,        ground biomass of a Eucalyptus hybrid in Congo. For
+   2009. Spatial assessment of the bioenergy potential of          Ecol Manage 205: 199-214.
+   forest residues in the western province of Spain, Cáceres.   Santa Regina I., Tarazona T., Calvo R., 1997. Aboveground
+   Biomass Bioenerg 33: 1358-1366.                                 biomass in a beech forest and a scots pine plantation in
+Marm, 2010. Anuario de Estadísticas Forestales 2009.               the Sierra de la Demanda area of northern Spain. Ann Sci
+   Ministerio de Medio Ambiente y Medio Rural y Marino.            For 54: 261-269.
+   Available in http://www.marm.es/es/biodiversidad/temas/      Sas Institute Inc., 2004. SAS/ETS(R) 9.1 User’s guide. In.
+   montes-y-politica-forestal/estadisticas-forestales [3 Oc-       SAS Institute Inc., Cary, N.C.
+   tober, 2011]. [In Spanish]                                   Shaiek O., Loustau D., Trichet P., Meredieu C., Bachtobji
+Merino A., Balboa M.A., Rodriguez-Soalleiro R., Álvarez-           B., Garchi S., El Aouni M.H., 2011. Generalized biomass
+   Gonzalez J.G., 2005. Nutrient exports under different           equations for the main aboveground biomass components
+   harvesting regimes in fast-growing forest plantations in        of maritime pine across contrasting environments. Ann
+   southern Europe. For Ecol Manage 207: 325-339.                  For Sci 68:443-452.
+Mokany K., Raison R.J., Prokushkin A.S., 2006. Critical         Sixto-Blanco H., Hernández M.J., Barrio Anta M., Carrasco
+   analysis of root: shoot ratios in terrestrial biomes. Glob      J., Cañellas I., 2007. Plantaciones del género Populus para
+   Change Biol 12: 84-96.                                          la producción de biomasa con fines energéticos: revisión.
+Montero G., Ortega C., Cañellas I., Bachiller A., 1999. Pro-       Inv Agrar-Sist Recursos Fores 16: 277-294.
+   ductividad aérea y dinámica de nutrientes en una pob-        Somogyi Z., Cienciala E., Makipaa R., Muukkonen P.,
+   lación de Pinus pinaster Ait. sometida a distintos              Lehtonen A., Weiss P., 2007. Indirect methods of large-
+   regímenes de claras. Inv Agrar-Sist Recursos Fores Fuera        scale forest biomass estimation. Eur J For Res 126:
+   de Serie: 175-206.                                              197-207.
+Montero G., Ruiz-Peinado R., Muñoz M., 2005. Producción         Teobaldelli M., Somogyi Z., Migliavacca M., Usoltsev V.A.,
+   de biomasa y fijación de CO2 por los bosques españoles.         2009. Generalized functions of biomass expansion fac-
+   Monografías INIA, Serie Forestal 13. Instituto Nacional         tors for conifers and broadleaved by stand age, growing
+   de Investigación y Tecnología Agraria y Alimentaria,            stock and site index. For Ecol Manage 257: 1004-1013.
+   Ministerio de Educación y Ciencia, Madrid, España, 270       Tobin B., Cermak J., Chiatante D., Danjon F., Iorio A.D.,
+   pp. [In Spanish]                                                Dupuy L., Eshel A., Jourdan C., Kalliokoski T., Laiho
+Návar J., 2009. Allometric equations for tree species and          R., Nadezhdina N., Nicoll B., Pages L., Silva J., Spanos
+   carbon stocks for forests of northwestern Mexico. For           I., 2007. Towards developmental modelling of tree root
+   Ecol Manage 257: 427-434.                                       systems. Plant Biosyst 141: 481-501.
+Parresol B.R., 1999. Assessing tree and stand biomass: A        Vanninen P., Mäkelä A., 2000. Needle and stem wood
+   review with examples and critical comparisons. For Sci          production in Scots pine (Pinus sylvestris) trees of dif-
+   45: 573-593.                                                    ferent age, size and competitive status. Tree Physiol
+Parresol B.R., 2001. Additivity of nonlinear biomass equa-         20: 527–533.
+   tions. Can J For Res 31: 865-878.                            Wirth C., Schumacher J., Schulze E.D., 2004. Generic bio-
+Peichl M., Arain M.A., 2007. Allometry and partitioning of         mass functions for Norway spruce in Central Europe - a
+   above- and belowground tree biomass in an age-sequence          meta-analysis approach toward prediction and uncer-
+   of white pine forests. For Ecol Manage 253: 68-80.              tainty estimation. Tree Physiol 24: 121-139.
+

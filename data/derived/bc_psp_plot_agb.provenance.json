@@ -1,0 +1,21 @@
+{
+  "output": "/scratch3/gsialelli/AGBD-Val/data/derived/bc_psp_plot_agb.csv",
+  "origin": "BC FAIB ground-plot compilations (PSP), psp/ subset",
+  "sources_sha256": {
+    "faib_tree_detail.csv": "d9f609cd42dd32d0d9e3cac19a6b654771ad2b1e2642c97452a6328143a4c910",
+    "faib_sample_byvisit.csv": "9b6db29182c4509d526ef16c06fb03f6cd9959ccf0125099af055e7e52fece60",
+    "faib_header.csv": "f029e21c149079036683ad65acf03b74975952d945926d1d3d607047079ea8b2"
+  },
+  "allometry": "Chojnacky, Heath & Jenkins 2014 (US generalized, applied to BC \u2014 flora overlaps)",
+  "expansion": "FAIB PHF_TREE (per-ha factor incl. plot area/weight/walkthrough)",
+  "filters": {
+    "LV_D": "L (live)",
+    "dbh_min_cm": 4.0
+  },
+  "species_map": "derive_agb/bc_species.py (confident BC codes only; rest dropped+reported)",
+  "n_plot_visits": 23942,
+  "n_coverage_ok": 23773,
+  "n_in_window_coord_ok": 1621,
+  "agb_median_mg_ha_coverage_ok": 191.89233030655757,
+  "CAVEAT": "Chojnacky is a US generalized allometry applied to BC; coordinates are TRUE (PSP) but precision varies by UTM_SOURCE (GPS-grade DGPS/RGPS/VGPS vs MAP/UNKNOWN) \u2014 filter coord_gps + in_window for 10 m validation. Woodland juniper (JR), yew (TW) and rare maple/misc codes are dropped, not defaulted."
+}
